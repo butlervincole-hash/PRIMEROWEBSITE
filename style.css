@@ -556,11 +556,11 @@ header {
 
 /* Neon Icon Grid Layout */
 .neon-icons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
+  justify-items: center;
+  align-items: center;
   margin-top: 3rem;
 }
 
@@ -1988,6 +1988,10 @@ footer.footer-main {
    MOBILE RESPONSIVE (max 768px)
 ============================ */
 @media (max-width: 768px) {
+  .neon-icons {
+    grid-template-columns: 1fr;
+  }
+  }
 
   /* Navigation */
   .nav-menu {
