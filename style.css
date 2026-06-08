@@ -554,6 +554,7 @@ header {
 }
 
 /* Neon Icon Grid Layout */
+/* FEATURES GRID */
 .neon-icons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -563,21 +564,7 @@ header {
   margin-top: 3rem;
 }
 
-.icon-row {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
-.icon-box img {
-  width: 100px; /* smaller, consistent size */
-  height: auto;
-  object-fit: contain;
-}
-
-/* ICON GRID UPGRADE */
+/* ICON BOX */
 .icon-box {
   text-align: center;
   max-width: 220px;
@@ -589,12 +576,15 @@ header {
   transition: 0.35s ease;
 }
 
+/* ICON IMAGES */
 .icon-box img {
-  width: 130px;
+  width: 120px;
+  height: auto;
   filter: drop-shadow(0 0 10px #39ff14);
   transition: 0.3s ease;
 }
 
+/* TEXT */
 .icon-box h4 {
   margin-top: 1rem;
   color: #39ff14;
@@ -606,28 +596,18 @@ header {
   margin-top: 0.5rem;
 }
 
-/* FEATURE ICON HOVER — NEON PURPLE */
-.icon-box:hover img {
-  transform: scale(1.12);
-  filter: 
-    drop-shadow(0 0 16px #39ff14)
-    drop-shadow(0 0 24px #b026ff)
-    brightness(1.3);
-  transition: 0.3s ease;
-}
-
-.icon-box img {
-  transition: 0.3s ease;
-}
-
-.icon-box:hover h4 {
-  color: #b026ff;
-  text-shadow: 0 0 10px #b026ff;
-}
-
+/* HOVER EFFECT */
 .icon-box:hover {
   transform: scale(1.12) rotate(1deg);
   filter: drop-shadow(0 0 14px #b026ff) brightness(1.35);
+}
+
+.icon-box:hover img {
+  transform: scale(1.12);
+  filter:
+    drop-shadow(0 0 16px #39ff14)
+    drop-shadow(0 0 24px #b026ff)
+    brightness(1.3);
 }
 
 /* ============================
