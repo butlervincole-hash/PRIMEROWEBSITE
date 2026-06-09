@@ -1003,3 +1003,7 @@ span.accent {
         drop-shadow(0 0 22px var(--neon-purple))
         drop-shadow(0 0 32px var(--neon-purple)) !important;
 }
+
+body {
+    outline: 5px solid red !important;
+}
