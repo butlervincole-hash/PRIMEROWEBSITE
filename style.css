@@ -304,12 +304,13 @@ header {
     will-change: transform, filter;
 }
 
-/* Left image tilt (same as nav logo) */
+/* STRONG dual-color glow on hero image hover */
 .hero-logo:hover {
     transform: scale(1.1) rotate(8deg);
     filter:
         drop-shadow(0 0 14px var(--neon-green))
-        drop-shadow(0 0 18px var(--neon-purple));
+        drop-shadow(0 0 22px var(--neon-purple))
+        drop-shadow(0 0 32px var(--neon-purple));
 }
 
 /* Right image tilt (mirrored) */
@@ -320,6 +321,10 @@ header {
         drop-shadow(0 0 18px var(--neon-purple));
 }
 
+/* Mirror tilt for right image */
+.hero-side-image:hover {
+    transform: scale(1.1) rotate(-8deg);
+}
 
 /* Make "Beautiful React..." flicker like nav title */
 .hero-center h1 {
@@ -831,9 +836,27 @@ span.accent {
    ANIMATIONS
 ============================ */
 @keyframes neonFlicker {
-    0%, 100% { opacity: 1; text-shadow: 0 0 8px var(--neon-green); }
-    50% { opacity: 0.85; text-shadow: 0 0 14px var(--neon-green); }
-    70% { opacity: 0.95; text-shadow: 0 0 20px var(--neon-green); }
+    0%, 100% {
+        opacity: 1;
+        text-shadow:
+            0 0 8px var(--neon-green),
+            0 0 14px var(--neon-green),
+            0 0 20px var(--neon-green);
+    }
+    50% {
+        opacity: 0.85;
+        text-shadow:
+            0 0 12px var(--neon-green),
+            0 0 20px var(--neon-green),
+            0 0 28px var(--neon-green);
+    }
+    70% {
+        opacity: 0.95;
+        text-shadow:
+            0 0 16px var(--neon-green),
+            0 0 26px var(--neon-green),
+            0 0 34px var(--neon-green);
+    }
 }
 
 @keyframes underlineGlow {
