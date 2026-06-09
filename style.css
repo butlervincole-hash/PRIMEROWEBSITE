@@ -280,55 +280,43 @@ header {
     text-align: center;
 }
 
+/* FINAL OVERRIDE — HERO IMAGE HOVER */
 .hero-logo,
 .hero-side-image {
-    width: 420px;
-    height: auto;
-    filter: drop-shadow(0 0 6px var(--neon-green));
-    transition: transform 0.35s ease, filter 0.35s ease;
-}
-
-.hero-logo:hover,
-.hero-side-image:hover {
-    transform: scale(1.1) rotate(8deg);
-    filter: drop-shadow(0 0 14px var(--neon-green));
-}
-
-/* FORCE hero images to match nav-bar hover behavior */
-.hero-logo,
-.hero-side-image {
-    width: 420px;
-    height: auto;
-    filter: drop-shadow(0 0 6px var(--neon-green));
-    transition: transform 0.35s ease, filter 0.35s ease;
+    width: 420px !important;
+    height: auto !important;
+    filter: drop-shadow(0 0 6px var(--neon-green)) !important;
+    transition: transform 0.35s ease, filter 0.35s ease !important;
     will-change: transform, filter;
 }
 
-/* STRONG dual-color glow on hero image hover */
+/* LEFT IMAGE — tilt right */
 .hero-logo:hover {
-    transform: scale(1.1) rotate(8deg);
+    transform: scale(1.1) rotate(8deg) !important;
     filter:
         drop-shadow(0 0 14px var(--neon-green))
         drop-shadow(0 0 22px var(--neon-purple))
-        drop-shadow(0 0 32px var(--neon-purple));
+        drop-shadow(0 0 32px var(--neon-purple)) !important;
 }
 
-/* Right image tilt (mirrored) */
+/* RIGHT IMAGE — tilt left */
 .hero-side-image:hover {
-    transform: scale(1.1) rotate(-8deg);
+    transform: scale(1.1) rotate(-8deg) !important;
     filter:
         drop-shadow(0 0 14px var(--neon-green))
-        drop-shadow(0 0 18px var(--neon-purple));
+        drop-shadow(0 0 22px var(--neon-purple))
+        drop-shadow(0 0 32px var(--neon-purple)) !important;
 }
 
-/* Mirror tilt for right image */
-.hero-side-image:hover {
-    transform: scale(1.1) rotate(-8deg);
-}
 
-/* Make "Beautiful React..." flicker like nav title */
+/* FINAL OVERRIDE — HERO TITLE FLICKER */
 .hero-center h1 {
-    animation: neonFlicker 1.8s ease-in-out infinite;
+    animation: neonFlicker 1.8s ease-in-out infinite !important;
+    -webkit-text-stroke: 1px var(--neon-green) !important;
+    text-shadow:
+        0 0 8px var(--neon-green),
+        0 0 14px var(--neon-green),
+        0 0 20px var(--neon-green) !important;
 }
 
 .hero-center p {
