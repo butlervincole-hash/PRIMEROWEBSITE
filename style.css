@@ -284,14 +284,14 @@ header {
 .hero-side-image {
     width: 420px;
     height: auto;
-    filter: drop-shadow(0 0 12px var(--neon-green));
-    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: drop-shadow(0 0 6px var(--neon-green));
+    transition: transform 0.35s ease, filter 0.35s ease;
 }
 
 .hero-logo:hover,
 .hero-side-image:hover {
-    transform: scale(1.08) rotate(2deg);
-    filter: drop-shadow(0 0 20px var(--neon-green));
+    transform: scale(1.1) rotate(8deg);
+    filter: drop-shadow(0 0 14px var(--neon-green));
 }
 
 .hero-center h1 {
@@ -824,3 +824,28 @@ span.accent {
     0%,100% { box-shadow: 0 0 8px var(--neon-purple); }
     50% { box-shadow: 0 0 16px var(--neon-purple); }
 } 
+
+/* HERO IMAGES — MATCH NAV BAR + ADD PURPLE GLOW + MIRRORED TILT */
+.hero-logo,
+.hero-side-image {
+    width: 420px;
+    height: auto;
+    filter: drop-shadow(0 0 6px var(--neon-green));
+    transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+/* Left image tilt (same direction as nav logo) */
+.hero-logo:hover {
+    transform: scale(1.1) rotate(8deg);
+    filter:
+        drop-shadow(0 0 14px var(--neon-green))
+        drop-shadow(0 0 18px var(--neon-purple));
+}
+
+/* Right image tilt (mirrored for symmetry) */
+.hero-side-image:hover {
+    transform: scale(1.1) rotate(-8deg);
+    filter:
+        drop-shadow(0 0 14px var(--neon-green))
+        drop-shadow(0 0 18px var(--neon-purple));
+}
