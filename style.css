@@ -246,7 +246,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-top: 20px;
+  align-items: stretch;
 }
 
 /* Unified email input */
@@ -287,7 +287,7 @@ header {
   color: #39ff14;
   border: 2px solid #39ff14;
   border-radius: 6px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
