@@ -1182,6 +1182,66 @@ body, h1, h2, h3, h4, h5, h6, p, a, span {
   text-shadow: 0 0 6px var(--neon-green);
 }
 
+/* Footer container */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px; /* wider padding pushes logo left and icons right */
+  background-color: #0a0a0a;
+  border-top: 2px solid var(--neon-green);
+  box-shadow: 0 0 15px var(--neon-purple);
+}
+
+/* Left logo + text */
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-left img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px var(--neon-green);
+}
+
+.footer-left h3 {
+  color: var(--neon-green);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  text-shadow: 0 0 8px var(--neon-green);
+}
+
+/* Center copyright */
+.footer-center {
+  color: #ccc;
+  font-size: 0.9rem;
+  text-shadow: 0 0 6px var(--neon-purple);
+}
+
+/* Right social icons */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 18px; /* space between icons */
+}
+
+.footer-right img {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px var(--neon-purple);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-right img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px var(--neon-green);
+}
+
+
 /* Responsive Footer Columns */
 @media (max-width: 900px) {
   .footer-columns {
