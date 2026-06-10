@@ -829,6 +829,30 @@ span.accent {
     transition: transform 0.35s ease, filter 0.35s ease;
 }
 
+.testimonial-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* stack images vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* space between the two images */
+}
+
+.testimonial-image img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--neon-green);
+    transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.testimonial-image img:nth-child(2) {
+    max-width: 360px;
+    transform: rotate(-3deg);
+    opacity: 0.9;
+}
+
 .testimonial-image img:hover {
     transform: scale(1.08) rotate(6deg);
     filter:
