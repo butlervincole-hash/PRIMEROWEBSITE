@@ -609,7 +609,7 @@ span.accent {
 
 /* Spacing before Learn More button */
 .values-text {
-  max-width: 520px;
+  max-width: 470px;
   margin: 0 auto;
 }
 
@@ -619,7 +619,7 @@ span.accent {
 
 /* VALUES IMAGE — GLOW + TILT */
 .values-image img {
-    width: 550px;
+    width: 750px;
     height: auto;
     filter: drop-shadow(0 0 6px var(--neon-green));
     transition: transform 0.35s ease, filter 0.35s ease;
