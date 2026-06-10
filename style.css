@@ -822,7 +822,7 @@ span.accent {
 /* TESTIMONIAL IMAGE — TILT + NEON GREEN GLOW */
 .testimonial-image img {
     width: 100%;
-    max-width: 350px; 
+    max-width: 330px; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--neon-green);
@@ -838,8 +838,8 @@ span.accent {
 }
 
 .testimonial-author {
-    margin-top: 25px;
-    margin-bottom: 30px;
+    margin-top:10px;
+    margin-bottom: 10px;
 }
 
 .author-img {
