@@ -683,6 +683,33 @@ span.accent {
     margin-top: 20px;
 }
 
+/* PRICING — Premium neon list style (Option B) */
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 22px 0;
+}
+
+.pricing-card li {
+    color: #ff00cc; /* neon pink */
+    font-weight: 500;
+    text-shadow: 0 0 6px #ff00cc;
+    margin-bottom: 14px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.pricing-card li::after {
+    content: '';
+    display: block;
+    width: 65%;
+    height: 2px;
+    margin: 8px auto 0;
+    background: linear-gradient(90deg, var(--neon-purple), var(--neon-green));
+    box-shadow: 0 0 6px var(--neon-purple);
+    border-radius: 2px;
+}
+
 /* ============================
    PRICING — CYBERPUNK LIST STYLE
 ============================ */
