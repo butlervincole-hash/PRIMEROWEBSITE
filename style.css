@@ -821,9 +821,9 @@ span.accent {
     transition: transform 0.35s ease, filter 0.35s ease;
 }
 
-.testimonial-image img:nth-child(2) {
+.testimonial-image img:last-child {
     width: 100%;
-    max-width:480px;
+    max-width:520px;
     height: auto;
     border-radius: 10px;
     transform: rotate(-3deg);
