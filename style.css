@@ -961,3 +961,19 @@ span.accent {
 .values-section .values-grid {
     margin-bottom: 28px;
 }
+
+/* PRICING — Make all cards equal height */
+.pricing-grid {
+    align-items: stretch !important;
+}
+
+/* PRICING — Align BUY NOW buttons */
+.pricing-card {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+.pricing-card .buy-btn {
+    margin-top: 20px !important;
+}
