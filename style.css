@@ -642,7 +642,6 @@ span.accent {
 .values-section .values grid {
   margin-bottom: 36px;
 
-
 /* ============================
    PRICING SECTION
 ============================ */
@@ -744,6 +743,15 @@ span.accent {
 @keyframes cyberStagger {
     0% { opacity: 0; transform: translateX(-10px); }
     100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulseDivider {
+    0%, 100% {
+        box-shadow: 0 0 6px var(--neon-purple), 0 0 10px var(--neon-green);
+    }
+    50% {
+        box-shadow: 0 0 14px var(--neon-green), 0 0 20px var(--neon-purple);
+    }
 }
 
 @keyframes pulseDivider {
