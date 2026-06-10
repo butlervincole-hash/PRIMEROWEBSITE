@@ -800,15 +800,14 @@ span.accent {
         drop-shadow(0 0 32px var(--neon-green));
 }
 
-
 .testimonial-text {
     flex: 1;
-    max-width: 400px;
+    max-width: 370px;
 }
 
 .author-img {
-  width: 130px;
-  height:130px;
+  width: 140px;
+  height:140px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid var(--neon-green);
