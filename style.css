@@ -767,7 +767,7 @@ span.accent {
     border-radius: 3px;
     background: linear-gradient(90deg, var(--neon-green), var(--neon-purple), var(--neon-green));
     background-size: 300% 100%;
-    animation: neonWave 4s linear infinite, neonPulse 2.5s ease-in-out infinite;
+    animation: neonWave 6s linear infinite, neonPulse 3s ease-in-out infinite;
     box-shadow: 0 0 12px var(--neon-green), 0 0 12px var(--neon-purple);
 }
 
@@ -780,6 +780,15 @@ span.accent {
     }
 }
 
+@keyframes neonFlicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+    }
+    20%, 24%, 55% {
+        opacity: 0.6;
+    }
+}
+
 
 /* ============================
    TESTIMONIALS SECTION
@@ -787,10 +796,11 @@ span.accent {
 .testimonials-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 60px;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 40px 0;
 }
 
 .testimonial-image {
@@ -809,7 +819,7 @@ span.accent {
 /* TESTIMONIAL IMAGE — TILT + NEON GREEN GLOW */
 .testimonial-image img {
     width: 100%;
-    max-width: 320;
+    max-width: 300;
     height:auto;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--neon-green);
@@ -822,6 +832,11 @@ span.accent {
         drop-shadow(0 0 14px var(--neon-green))
         drop-shadow(0 0 22px var(--neon-green))
         drop-shadow(0 0 32px var(--neon-green));
+}
+
+.testimonial-author {
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .author-img {
