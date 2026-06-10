@@ -809,10 +809,10 @@ span.accent {
     flex-direction: column; /* stack vertically */
     justify-content: center;
     align-items: center;
-    gap: 30px; /* space between images */
+    gap: 60px; /* space between images */
 }
 
-.testimonial-image img {
+.testimonial-image img:first child {
     width: 100%;
     max-width: 420px;
     height: auto;
@@ -822,9 +822,14 @@ span.accent {
 }
 
 .testimonial-image img:nth-child(2) {
-    max-width: 360px;
+    width: 100%;
+    max-width:480px;
+    height: auto;
+    border-radius: 10px;
     transform: rotate(-3deg);
-    opacity: 0.9;
+    opacity: 0.95;
+    box-shadow: 0 0 14px var(--neon-green);
+    transition: transform -.35s ease, filter 0.35s ease;
 }
 
 .testimonial-image img:hover {
