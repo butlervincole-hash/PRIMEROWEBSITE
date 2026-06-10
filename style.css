@@ -766,29 +766,22 @@ span.accent {
 .testimonials-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 3rem;
-    flex-wrap: wrap;
+    gap: 60px;
     max-width: 1200px;
+    width: 100%;
+}
+
+.testimonial-text {
+    max-width: 370px;
     margin: 0 auto;
 }
 
 /* TESTIMONIAL IMAGE — TILT + NEON GREEN GLOW */
-/* TESTIMONIAL IMAGE — TILT + NEON GREEN GLOW */
-.testimonial-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .testimonial-image img {
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--neon-green);
-    transition: transform 0.35s ease, filter 0.35s ease;
+    width: 750px;
+    height:auto;
+    filter: drop-shadow(0 0 6px var(--neon-green));
+    transition: transform -.35s ease, filter 0.35s ease;
     will-change: transform, filter;
 }
 
@@ -798,11 +791,6 @@ span.accent {
         drop-shadow(0 0 14px var(--neon-green))
         drop-shadow(0 0 22px var(--neon-green))
         drop-shadow(0 0 32px var(--neon-green));
-}
-
-.testimonial-text {
-    flex: 1;
-    max-width: 370px;
 }
 
 .author-img {
