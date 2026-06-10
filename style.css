@@ -782,17 +782,34 @@ span.accent {
 }
 
 .testimonials-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     gap: 3rem;
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.testimonial-text {
-    text-align: left;
+.testimonial-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.testimonial-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
 
 .testimonial-subtext {
     margin: 12px 0 18px;
@@ -820,7 +837,6 @@ span.accent {
 .faq-item {
     margin-bottom: 18px;
 }
-
 
 .faq-question {
     width: 100%;
