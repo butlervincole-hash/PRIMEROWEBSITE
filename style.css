@@ -760,29 +760,60 @@ span.accent {
     }
 }
 
+.neon-divider {
+    width: 85%;
+    height: 4px;
+    margin: 60px auto;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--neon-green), var(--neon-purple), var(--neon-green));
+    background-size: 300% 100%;
+    animation: neonWave 4s linear infinite, neonPulse 2.5s ease-in-out infinite;
+    box-shadow: 0 0 12px var(--neon-green), 0 0 12px var(--neon-purple);
+}
+
+@keyframes neonPulse {
+    0%, 100% {
+        box-shadow: 0 0 8px var(--neon-green), 0 0 8px var(--neon-purple);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--neon-green), 0 0 20px var(--neon-purple);
+    }
+}
+
+
 /* ============================
    TESTIMONIALS SECTION
 ============================ */
 .testimonials-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 60px;
     max-width: 1200px;
-    width: 100%;
+    margin: 0 auto;
+}
+
+.testimonial-image {
+  flex:1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonial-text {
-    max-width: 370px;
-    margin: 0 auto;
+    flex:1;
+    max-width: 500px;
+    text-align: left;
 }
 
 /* TESTIMONIAL IMAGE — TILT + NEON GREEN GLOW */
 .testimonial-image img {
-    width: 750px;
+    width: 100%;
+    max-width: 320;
     height:auto;
-    filter: drop-shadow(0 0 6px var(--neon-green));
-    transition: transform -.35s ease, filter 0.35s ease;
-    will-change: transform, filter;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--neon-green);
+    transition: transform 0.35s ease, filter 0.35s ease;
 }
 
 .testimonial-image img:hover {
@@ -808,6 +839,27 @@ span.accent {
     box-shadow: 0 0 18px var(--neon-purple), 0 0 28px var(--neon-green);
     transition: 0.3s ease;
 }
+
+.neon-divider {
+    width: 85%;
+    height: 4px;
+    margin: 60px auto;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--neon-green), var(--neon-purple), var(--neon-green));
+    background-size: 300% 100%;
+    animation: neonWave 4s linear infinite, neonPulse 2.5s ease-in-out infinite;
+    box-shadow: 0 0 12px var(--neon-green), 0 0 12px var(--neon-purple);
+}
+
+@keyframes neonPulse {
+    0%, 100% {
+        box-shadow: 0 0 8px var(--neon-green), 0 0 8px var(--neon-purple);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--neon-green), 0 0 20px var(--neon-purple);
+    }
+}
+
 
 /* ============================
    FAQ SECTION
