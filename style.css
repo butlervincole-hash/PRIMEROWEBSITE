@@ -773,16 +773,44 @@ span.accent {
     margin: 0 auto;
 }
 
-.testimonial-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* TESTIMONIAL IMAGE — TILT + NEON GREEN GLOW */
+.testimonial-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--neon-green);
+    transition: transform 0.35s ease, filter 0.35s ease;
+    will-change: transform, filter;
+}
+
+.testimonial-image img:hover {
+    transform: scale(1.08) rotate(6deg);
+    filter:
+        drop-shadow(0 0 14px var(--neon-green))
+        drop-shadow(0 0 22px var(--neon-green))
+        drop-shadow(0 0 32px var(--neon-green));
 }
 
 .testimonial-text {
     flex: 1;
     max-width: 500px;
+}
+
+.author-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--neon-green);
+  background: #000;
+  padding: 3px;
+ }
+
+ .author-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 18px var(--neon-purple), 0 0 28px var(--neon-green);
+    transition: 0.3s ease;
 }
 
 /* ============================
