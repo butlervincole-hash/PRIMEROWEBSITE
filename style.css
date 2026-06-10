@@ -802,6 +802,10 @@ span.accent {
     padding: 40px 0;
 }
 
+.testimonials-container {
+    align-items: center;
+}
+
 /* LEFT SIDE — stacked illustrations */
 .testimonial-image {
     flex: 1;
@@ -809,7 +813,7 @@ span.accent {
     flex-direction: column; /* stack vertically */
     justify-content: center;
     align-items: center;
-    gap: 60px; /* space between images */
+    gap: 90px;/* space between images */
 }
 
 .testimonial-image img:first child {
@@ -822,14 +826,13 @@ span.accent {
 }
 
 .testimonial-image img:last-child {
-    width: 100%;
-    max-width:520px;
+    width: 90%;
+    max-width:500px;
     height: auto;
     border-radius: 10px;
     transform: rotate(-3deg);
     opacity: 0.95;
     box-shadow: 0 0 14px var(--neon-green);
-    transition: transform -.35s ease, filter 0.35s ease;
 }
 
 .testimonial-image img:hover {
