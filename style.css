@@ -641,9 +641,8 @@ span.accent {
 
 .values-section .values grid {
   margin-bottom: 36px;
-}
 
-/* ============================
+  /* ============================
    PRICING SECTION
 ============================ */
 .pricing-section {
@@ -658,6 +657,7 @@ span.accent {
 .pricing-grid {
     display: flex;
     justify-content: center;
+    align-items: stretch; /* FIXED */
     gap: 30px;
     flex-wrap: wrap;
 }
@@ -671,19 +671,19 @@ span.accent {
     text-align: center;
     width: 280px;
     transition: 0.3s ease;
+
+    /* FIXED STRUCTURE */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* FIXED semicolon */
 }
 
-.pricing-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%
+.pricing-card .buy-btn {
+    margin-top: 20px;
 }
 
-.pricing grid {
-  align-items: stretch;
-}
-
+/
 /* ============================
    TESTIMONIALS SECTION
 ============================ */
@@ -962,18 +962,3 @@ span.accent {
     margin-bottom: 28px;
 }
 
-/* PRICING — Make all cards equal height */
-.pricing-grid {
-    align-items: stretch !important;
-}
-
-/* PRICING — Align BUY NOW buttons */
-.pricing-card {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-}
-
-.pricing-card .buy-btn {
-    margin-top: 20px !important;
-}
