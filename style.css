@@ -676,8 +676,7 @@ span.accent {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1 1 280px;
-    min-height: 480px;
+    height: 100%; /* FIXED semicolon */
 }
 
 .pricing-card .buy-btn {
