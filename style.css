@@ -672,11 +672,12 @@ span.accent {
     width: 280px;
     transition: 0.3s ease;
 
-    /* FIXED STRUCTURE */
+  .pricing-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%; /* FIXED semicolon */
+    flex: 1 1 280px;
+    min-height: 480px;
 }
 
 .pricing-card .buy-btn {
