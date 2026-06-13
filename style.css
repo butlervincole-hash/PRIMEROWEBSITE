@@ -166,6 +166,47 @@ header {
   animation: underlineGlow 2s ease-in-out infinite alternate;
 }
 
+/* Desktop Nav Links */
+.nav-links-desktop {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin-left: auto;
+}
+
+.nav-links-desktop a {
+  color: var(--neon-purple);
+  text-decoration: none;
+  font-weight: 600;
+  text-shadow: 0 0 6px var(--neon-purple);
+  transition: 0.3s ease;
+}
+
+.nav-links-desktop a:hover {
+  color: var(--neon-green);
+  text-shadow: 0 0 10px var(--neon-green);
+}
+
+/* Sign Up Button */
+.signup-btn {
+  background: var(--neon-green);
+  color: #000;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: 2px solid var(--neon-green);
+  box-shadow: 0 0 12px var(--neon-green);
+  text-shadow: none;
+  transition: 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: #000;
+  color: var(--neon-purple);
+  border-color: var(--neon-purple);
+  box-shadow: 0 0 16px var(--neon-purple);
+}
+
 /* ============================
    HAMBURGER MENU
 ============================ */
@@ -1407,6 +1448,13 @@ h2 {
     drop-shadow(0 0 12px var(--neon-green))
     drop-shadow(0 0 18px var(--neon-purple));
 }
+
+@media (max-width: 900px) {
+  .nav-links-desktop {
+    display: none;
+  }
+}
+
 
 
 
