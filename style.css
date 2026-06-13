@@ -814,8 +814,8 @@ span.accent {
 
 /* Explicit class for your top image */
 .testimonial-img-top {
-    width: 100%;
-    max-width: 100px; /* Snaps it tightly to 100px width */
+    width: 90%;
+    max-width: 320px; /* Snaps it tightly to 100px width */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--neon-green);
