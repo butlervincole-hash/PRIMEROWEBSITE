@@ -807,8 +807,8 @@ span.accent {
     flex: 1;
     display: grid;
     grid-template-rows: 1fr 1fr; /* Slices the column into two equal halves */
-    align-items: center;         /* Centers elements within their respective halves */
     justify-items: center;
+    row-gap: 50px;
 }
 
 /* Explicit class for your top image */
@@ -820,7 +820,7 @@ span.accent {
     box-shadow: 0 0 14px var(--neon-green); 
     transition: transform 0.35s ease, filter 0.35s ease;
     align-self: end; /* Pins this image to the horizontal line separating the cards */
-    margin-bottom: 30px; /* Shifts it slightly upward to settle right next to Charlotte */
+    margin-bottom: 5px; /* Shifts it slightly upward to settle right next to Charlotte */
 }
 
 .testimonial-img-top:hover {
@@ -841,7 +841,9 @@ span.accent {
     box-shadow: 0 0 14px var(--neon-green);
     transition: transform 0.35s ease, filter 0.35s ease;
     align-self: start; /* Pins this image right down to the lower grid half next to Jordan */
-    margin-top: 30px;
+    grid-row: 2;
+    align-self: start;
+    margin-top: 5px;
 }
 
 .testimonial-img-bottom:hover {
