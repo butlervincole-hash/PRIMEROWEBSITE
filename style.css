@@ -969,6 +969,9 @@ span.accent {
 /* ============================
    CTA FOOTER BANNER
 ============================ */
+/* ============================
+   CTA FOOTER BANNER
+============================ */
 .footer-banner {
     padding: 60px 20px;
     background: #000;
@@ -976,6 +979,22 @@ span.accent {
     border-bottom: 2px solid var(--neon-purple);
     text-align: center;
     box-shadow: 0 0 20px var(--neon-green), 0 0 20px var(--neon-purple) inset;
+}
+
+/* 1. Spacing between the text and the buttons */
+.cta-section p,
+.footer-banner p, /* Added this just in case your container class is .footer-banner */
+div:has(> .cta-content) p {
+    margin-bottom: 30px;
+}
+
+/* 2. Spacing BETWEEN the two buttons */
+.cta-buttons-container,
+div:has(> .cta-buttons) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* This cleanly handles the "tiny bit of space" perfectly and keeps them centered */
 }
 
 /* ============================
