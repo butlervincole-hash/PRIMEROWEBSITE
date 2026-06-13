@@ -1284,13 +1284,3 @@ span.accent {
     100% { filter: hue-rotate(360deg); }
 }
 
-/* VALUES — Fix image size */
-.values-section .values-image img {
-    width: 360px;
-    height: auto;
-}
-
-/* VALUES — Add spacing below the grid */
-.values-section .values-grid {
-    margin-bottom: 28px;
-}
