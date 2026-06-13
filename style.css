@@ -807,9 +807,7 @@ span.accent {
     flex: 1;
     display: flex;
     flex-direction: column; 
-    justify-content: flex-end;
     align-items: center;
-    gap: 65px;
 }
 
 /* Explicit class for your top image */
@@ -818,8 +816,9 @@ span.accent {
     max-width: 320px; 
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 0 10px var(--neon-green);
+    box-shadow: 0 0 14px var(--neon-green);
     transition: transform 0.35s ease, filter 0.35s ease;
+    margin-top: 65px;
 }
 
 .testimonial-img-top:hover {
@@ -838,6 +837,7 @@ span.accent {
     opacity: 0.95;
     box-shadow: 0 0 14px var(--neon-green);
     transition: transform 0.35s ease, filter 0.35s ease;
+    margin-top: 65px;
 }
 
 .testimonial-img-bottom:hover {
