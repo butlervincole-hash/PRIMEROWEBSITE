@@ -559,11 +559,12 @@ span.accent {
 /* Container for image + text */
 .steps-container {
   display: flex;
-  align-items: center; /* Corrected from 'right' */
-  justify-content: center; /* Centers horizontally */
+  justify-content: center;
+  align-items: center;
   gap: 60px;
   max-width: 1200px;
   width: 100%;
+  margin: 0 auto; /* <-- THIS is the missing piece */
 }
 
 /* Text block spacing */
