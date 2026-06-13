@@ -1099,6 +1099,50 @@ body {
   100% { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes auraPulse {
+  0% { box-shadow: 0 0 20px rgba(57,255,20,0.4); }
+  50% { box-shadow: 0 0 35px rgba(176,38,255,0.5); }
+  100% { box-shadow: 0 0 20px rgba(57,255,20,0.4); }
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(57,255,20,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(176,38,255,0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero-center {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.hero-logo {
+  animation: auraPulse 5s ease-in-out infinite;
+}
+
+.hero-logo:hover,
+.hero-side-image:hover {
+  transform: scale(1.1) rotate(4deg);
+  filter:
+    drop-shadow(0 0 18px var(--neon-green))
+    drop-shadow(0 0 28px var(--neon-purple));
+}
+
 @keyframes cyberStagger {
   0% { opacity: 0; transform: translateX(-10px); }
   100% { opacity: 1; transform: translateX(0); }
@@ -1186,6 +1230,16 @@ body {
 @keyframes glowShift {
   0% { filter: hue-rotate(0deg); }
   100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes neonShimmer {
+  0% { text-shadow: 0 0 8px var(--neon-green); }
+  50% { text-shadow: 0 0 14px var(--neon-purple); }
+  100% { text-shadow: 0 0 8px var(--neon-green); }
+}
+
+.hero-center h1 {
+  animation: neonShimmer 4s ease-in-out infinite;
 }
 
 @keyframes softFlicker {
