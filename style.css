@@ -1098,6 +1098,10 @@ span.accent {
     padding: 10px 60px;
 }
 
+.footer-bottom p {
+  white-space:nowrap;
+}
+
 .footer-bottom img {
     width: 55px;
     height: auto;
