@@ -971,11 +971,25 @@ span.accent {
 ============================ */
 .footer-banner {
     padding: 60px 20px;
-    background: #000;
+    background: linear-gradient(180deg, #000 0%, #0a0a0a 100%),
     border-top: 2px solid var(--neon-green);
     border-bottom: 2px solid var(--neon-purple);
     text-align: center;
-    box-shadow: 0 0 20px var(--neon-green), 0 0 20px var(--neon-purple) inset;
+    box-shadow: 0 0 25px var(--neon-green), 0 0 25px var(--neon-purple) inset;
+    position: relative;
+    z-index: 2;
+}
+
+/* Subtle divider glow animation */
+.footer-banner::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--neon-green), var(--neon-purple))
+    animation: glowShift 4s linear infinite;
 }
 
 /* 1. Spacing between the text and the buttons */
@@ -994,6 +1008,12 @@ div:has(> .cta-buttons) {
     gap: 20px; /* This cleanly handles the "tiny bit of space" perfectly and keeps them centered */
 }
 
+.footer-banner .btn:hover {
+  color: var(--neon-purple);
+  border-color: var(--neon-purple);
+  box-shadow: 0 0 12px var(--neon-purple);
+  transform: scale(1.05);
+}
 
 /* ============================
    FOOTER
@@ -1183,6 +1203,11 @@ div:has(> .cta-buttons) {
     0% { box-shadow: 0 0 6px var(--neon-green); }
     50% { box-shadow: 0 0 14px var(--neon-purple); }
     100% { box-shadow: 0 0 6px var(--neon-green); }
+}
+
+@keyframes glowShirt {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
 }
 
 /* VALUES — Fix image size */
