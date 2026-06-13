@@ -1157,6 +1157,12 @@ span.accent {
     text-shadow: 0 0 8px var(--neon-green);
 }
 
+.footer-brand {
+  color: var(--neon-green);
+  text-shadow: 0 0 8px var(--neon-green), 0 0 16px var(--neon-green);
+  font-weight: 600;
+}
+
 /* ============================
    RESPONSIVE
 ============================ */
