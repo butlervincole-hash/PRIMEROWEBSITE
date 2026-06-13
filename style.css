@@ -809,7 +809,7 @@ span.accent {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    gap: 40px; /* Reduced from 90px so your image layout fits cleanly on the screen */
+    gap: 45px; /* Reduced from 90px so your image layout fits cleanly on the screen */
 }
 
 /* Explicit class for your top image */
@@ -823,9 +823,10 @@ span.accent {
 }
 
 .testimonial-img-top:hover {
-    transform: scale(1.08) rotate(6deg);
+    transform: scale(1.08) rotate(3deg);
     filter: drop-shadow(0 0 14px var(--neon-green));
-}
+            drop-shadow(0 0 22px var(--neon-green));
+  }
 
 /* Explicit class for your bottom image */
 .testimonial-img-bottom {
