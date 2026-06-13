@@ -30,8 +30,8 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   font-size: 1rem;
-  line-height: 1.6;
-  color: var(--gray);
+  line-height: 1.7;
+  color: #d0d0d0;
   background: var(--black);
   border: 4px solid var(--neon-purple);
   box-shadow: 0 0 25px var(--neon-purple) inset;
@@ -266,6 +266,10 @@ header {
   height: auto;
   filter: drop-shadow(0 0 6px var(--neon-green));
   transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.hero-logo {
+  box-shadow: 0 0 25px rgba(57,255,20,0.4);
 }
 
 .hero-logo:hover {
@@ -932,6 +936,10 @@ header {
   transform: scale(1.05);
 }
 
+button:hover {
+  box-shadow: 0 0 12px var(--neon-green), 0 0 20px var(--neon-purple);
+}
+
 /* ============================
    FOOTER
 ============================ */
@@ -1026,6 +1034,9 @@ header {
   margin: 0;
   justify-self: start;
 }
+
+background: linear-gradient(135deg, #000 0%, #0a0a0a 100%);
+animation: heroBGShift 10s ease-in-out infinite;
 
 /* ============================
    RESPONSIVE
@@ -1172,3 +1183,12 @@ header {
   0% { filter: hue-rotate(0deg); }
   100% { filter: hue-rotate(360deg); }
 }
+
+@keyframes softFlicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.9; }
+}
+h2 {
+  animation: softFlicker 3s ease-in-out infinite;
+}
+
