@@ -816,7 +816,7 @@ span.accent {
     gap: 90px;/* space between images */
 }
 
-.testimonial-image img:first child {
+.testimonial-image img:first-child {
     width: 100%;
     max-width: 100px;
     height: auto;
