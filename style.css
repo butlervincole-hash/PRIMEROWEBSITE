@@ -411,18 +411,27 @@ header {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .customer-logos img {
-  height: 40px;
-  filter: drop-shadow(0 0 6px var(--neon-green));
+  height: 65px;
+  filter: drop-shadow(0 0 8px var(--neon-green));
   transition: 0.3s ease;
 }
 
 .customer-logos img:hover {
   transform: scale(1.1);
-  filter: drop-shadow(0 0 10px var(--neon-purple));
+  filter: drop-shadow(0 0 12px var(--neon-purple));
+}
+
+.trusted-customers p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--neon-green);
+  text-shadow: 0 0 8px var(--neon-green), 0 0 16px var(--neon-purple);
+  letter-spacing: 1px;
+  animation: flicker 2s infinite alternate;
 }
 
 /* ============================
@@ -1445,6 +1454,12 @@ h2 {
   .nav-links-desktop {
     display: none;
   }
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.85; }
+  100% { opacity: 1; }
 }
 
 
