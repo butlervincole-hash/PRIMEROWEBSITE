@@ -364,7 +364,6 @@ header {
   color: var(--neon-purple);
   text-shadow: 0 0 10px var(--neon-purple), 0 0 18px var(--neon-purple);
 }
-
 .email-input-container {
   display: flex;
   align-items: center;
@@ -531,45 +530,28 @@ header {
 ============================ */
 .quality-section {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 40px;
-  background: #000;
-  border-top: 2px solid var(--neon-purple);
-  border-bottom: 2px solid var(--neon-green);
-  box-shadow: 0 0 20px var(--neon-purple), 0 0 20px var(--neon-green) inset;
-}
-
-.quality-container {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 60px;
-  max-width: 1200px;
-  width: 100%;
+  padding: 40px 0;
 }
 
-.quality-text {
-  max-width: 520px;
-  margin: 0 auto;
+.quality-content {
+  flex: 1;
+  max-width: 50%;
 }
 
-.quality-subtext {
-  margin-bottom: 28px;
+.quality-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .quality-image img {
-  width: 450px;
-  height: auto;
-  filter: drop-shadow(0 0 6px var(--neon-green));
-  transition: transform 0.35s ease, filter 0.35s ease;
-}
-
-.quality-image img:hover {
-  transform: scale(1.08) rotate(6deg);
-  filter:
-    drop-shadow(0 0 14px var(--neon-green))
-    drop-shadow(0 0 22px var(--neon-purple))
-    drop-shadow(0 0 32px var(--neon-purple));
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--neon-green);
 }
 
 /* ============================
