@@ -124,7 +124,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap:24px;
+  gap: 24px;
 }
 
 .nav-left {
@@ -233,7 +233,8 @@ header {
   border: none;
   cursor: pointer;
   padding: 0;
-  margin-right: 15px;
+  margin-left: 20px;
+  margin-right:0;
 }
 
 .hamburger span {
