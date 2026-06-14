@@ -532,16 +532,13 @@ header {
    QUALITY SECTION
 ============================ */
 .quality-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 0;
+  padding: 80px 0;
   text-align: left;
 }
 
 .quality-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* text left, image right */
   align-items: center;
   gap: 60px;
   width: 80%;
@@ -565,7 +562,6 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 20px var(--neon-green);
   display: block;
-  margin-top: 20px; /* adds breathing room */
 }
 .email-input-container {
   display: flex;
