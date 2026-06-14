@@ -534,7 +534,7 @@ header {
 
 .quality-container {
   display: flex;
-  justify-content: space-between; /* text left, image right */
+  justify-content: space-between;
   align-items: center;
   gap: 60px;
   width: 80%;
@@ -603,22 +603,6 @@ header {
   box-shadow: 0 0 14px var(--neon-green);
 }
 
-/* Learn More button */
-.learn-more-btn {
-  display: inline-block;
-  margin-top: 15px;
-  color: var(--neon-purple);
-  font-weight: 600;
-  text-decoration: none;
-  text-shadow: 0 0 6px var(--neon-purple);
-  transition: 0.3s ease;
-}
-
-.learn-more-btn:hover {
-  color: var(--neon-green);
-  text-shadow: 0 0 10px var(--neon-green);
-}
-
 /* ============================
    STEPS SECTION
 ============================ */
@@ -662,6 +646,22 @@ header {
     drop-shadow(0 0 32px var(--neon-green));
 }
 
+/* Learn More button */
+.learn-more-btn {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--neon-purple);
+  font-weight: 600;
+  text-decoration: none;
+  text-shadow: 0 0 6px var(--neon-purple);
+  transition: 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  color: var(--neon-green);
+  text-shadow: 0 0 10px var(--neon-green);
+}
+
 /* ============================
    VALUES SECTION
 ============================ */
@@ -687,26 +687,6 @@ header {
 
 .values-text {
   max-width: 470px;
-  margin: 0 auto;
-}
-
-.values-section-subtext {
-  margin-bottom: 28px;
-}
-
-.values-section .values-image img {
-  width: 340px;
-  height: auto;
-  filter: drop-shadow(0 0 6px var(--neon-green));
-  transition: transform 0.35s ease, filter 0.35s ease;
-}
-
-.values-section .values-image img:hover {
-  transform: scale(1.08) rotate(6deg);
-  filter:
-    drop-shadow(0 0 14px var(--neon-green))
-    drop-shadow(0 0 22px var(--neon-purple))
-    drop-shadow(0 0 32px var(--neon-purple));
 }
 
 .values-row {
@@ -715,11 +695,6 @@ header {
   align-items: flex-start;
   gap: 40px;
   margin-top: 20px;
-}
-
-.value-item {
-  flex: 1;
-  color: #d0d0d0;
 }
 
 .value-item h4 {
@@ -773,9 +748,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 1 1 300px;
-  min-width: 280px;
-  max-width: 320px;
 }
 
 .pricing-card .buy-btn {
