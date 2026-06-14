@@ -468,6 +468,7 @@ header {
 .quality-text {
   flex: 1;
   max-width: 50%;
+  text-align: left;
 }
 
 .quality-image {
@@ -477,7 +478,7 @@ header {
   align-items: center;
 }
 
-/* Quality image effects — safe version */
+/* Quality image effects — same as hero */
 .quality-image img {
   width: 90%;
   max-width: 400px;
@@ -496,7 +497,6 @@ header {
     drop-shadow(0 0 14px var(--neon-green))
     drop-shadow(0 0 20px var(--neon-purple));
 }
-
 
 /* ============================
    EMAIL INPUT & BUTTON
