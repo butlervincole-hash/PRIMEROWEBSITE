@@ -662,6 +662,33 @@ header {
     drop-shadow(0 0 32px var(--neon-purple));
 }
 
+.values-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.value-item {
+  flex: 1;
+  color: #d0d0d0;
+}
+
+.value-item h4 {
+  color: var(--neon-purple);
+  text-shadow: 0 0 8px var(--neon-purple);
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.value-icon {
+  font-size: 1.6rem;
+  color: var(--neon-green);
+  text-shadow: 0 0 10px var(--neon-green);
+  margin-right: 6px;
+}
+
 /* ============================
    PRICING SECTION
 ============================ */
