@@ -1099,19 +1099,9 @@ button:hover {
     text-align: center;
   }
 
-  /* Quality section should ALSO stack on mobile */
   .quality-container {
     flex-direction: column;
     text-align: center;
-  }
-
-  .quality-text,
-  .quality-image {
-    max-width: 100%;
-  }
-
-  .quality-image img {
-    width: 300px;
   }
 
   .neon-icons {
