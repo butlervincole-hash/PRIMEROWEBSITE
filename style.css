@@ -468,6 +468,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 /* ============================
    QUALITY IMAGE EFFECTS
 ============================ */
@@ -479,6 +480,7 @@ header {
   display: block;
   filter: drop-shadow(0 0 6px var(--neon-green));
   transition: transform 0.35s ease, filter 0.35s ease;
+  animation: auraPulse 5s ease-in-out infinite; /* subtle glow pulse */
 }
 
 /* Hover animation — same as hero image */
@@ -489,11 +491,9 @@ header {
     drop-shadow(0 0 20px var(--neon-purple));
 }
 
-.quality-image img {
-  animation: auraPulse 5s ease-in-out infinite;
-}
-
-/* Email input and button styling */
+/* ============================
+   EMAIL INPUT & BUTTON
+============================ */
 .email-input-container {
   display: flex;
   align-items: center;
