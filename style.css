@@ -365,86 +365,72 @@ header {
   text-shadow: 0 0 10px var(--neon-purple), 0 0 18px var(--neon-purple);
 }
 
-/* ============================
-   HERO INPUT ROW
-============================ */
-.hero-input-row {
+.email-input-container {
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: stretch;
-  gap: 12px;
+  background: #111;
+  border: 2px solid var(--neon-purple);
+  border-radius: 30px;
+  padding: 6px;
+  width: 380px;
+  margin: 20px auto;
+  box-shadow: 0 0 12px var(--neon-purple);
 }
 
 .email-input {
   flex: 1;
-  padding: 12px 16px;
-  border-radius: 6px;
-  border: 2px solid var(--neon-purple);
-  background: #000;
+  background: transparent;
+  border: none;
   color: var(--neon-green);
+  padding: 10px 16px;
   font-size: 1rem;
-  box-shadow: 0 0 10px var(--neon-purple);
+  outline: none;
 }
 
-/* ============================
-   BUTTONS
-============================ */
-.get-started-btn,
-.buy-btn,
-.cta-btn,
-.learn-more-btn,
-.contact-btn {
-  display: inline-block;
-  padding: 12px 22px;
-  border-radius: 6px;
-  border: 2px solid var(--neon-green);
-  background: #000;
-  color: var(--neon-green);
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-  box-shadow: 0 0 10px var(--neon-green);
+.get-started-btn {
+  background: var(--neon-purple);
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: 600;
   cursor: pointer;
+  box-shadow: 0 0 10px var(--neon-purple);
   transition: 0.3s ease;
 }
 
 .get-started-btn:hover {
-  background: var(--neon-purple);
-  color: #000;
-  border-color: var(--neon-purple);
-  box-shadow: 0 0 16px var(--neon-purple);
-}
-
-.buy-btn:hover,
-.cta-btn:hover,
-.learn-more-btn:hover,
-.contact-btn:hover {
   background: var(--neon-green);
   color: #000;
-  box-shadow: 0 0 16px var(--neon-green);
+  box-shadow: 0 0 14px var(--neon-green);
 }
 
-/* ============================
-   CUSTOMERS SECTION
-============================ */
+.trusted-customers {
+  margin-top: 30px;
+  text-align: center;
+  color: var(--neon-purple);
+  font-weight: 600;
+  text-shadow: 0 0 6px var(--neon-purple);
+}
+
 .customer-logos {
   display: flex;
   justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
-  padding: 20px 0;
+  align-items: center;
+  gap: 40px;
+  margin-top: 15px;
 }
 
-.customer-logo {
-  width: 110px;
-  opacity: 0.9;
+.customer-logos img {
+  height: 40px;
   filter: drop-shadow(0 0 6px var(--neon-green));
   transition: 0.3s ease;
 }
 
-.customer-logo:hover {
-  transform: scale(1.08);
-  filter: drop-shadow(0 0 14px var(--neon-green));
+.customer-logos img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px var(--neon-purple));
 }
 
 /* ============================
