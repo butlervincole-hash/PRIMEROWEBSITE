@@ -533,19 +533,18 @@ header {
 ============================ */
 .quality-section {
   display: flex;
-  justify-content: center; /* centers horizontally */
-  align-items: center;     /* centers vertically */
-  gap: 60px;
+  justify-content: center;
+  align-items: center;
   padding: 60px 0;
   text-align: left;
 }
 
 .quality-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 60px;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -553,7 +552,6 @@ header {
   flex: 1;
   max-width: 50%;
 }
-
 .quality-image {
   flex: 1;
   display: flex;
@@ -566,7 +564,8 @@ header {
   max-width: 400px;
   border-radius: 10px;
   box-shadow: 0 0 20px var(--neon-green);
-  display: block; /* ensures visibility */
+  display: block;
+  margin-top: 20px; /* adds breathing room */
 }
 .email-input-container {
   display: flex;
@@ -577,7 +576,7 @@ header {
   border-radius: 30px;
   padding: 6px;
   width: 380px;
-  margin: 20px auto;
+  margin: 20px 0;
   box-shadow: 0 0 12px var(--neon-purple);
 }
 
@@ -607,6 +606,11 @@ header {
   background: var(--neon-green);
   color: #000;
   box-shadow: 0 0 14px var(--neon-green);
+}
+
+.quality-section,
+.steps-section {
+  padding: 80px 0;
 }
 
 /* ============================
