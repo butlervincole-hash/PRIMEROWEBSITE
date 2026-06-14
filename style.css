@@ -406,14 +406,6 @@ header {
   box-shadow: 0 0 14px var(--neon-green);
 }
 
-.trusted-customers {
-  margin-top: 30px;
-  text-align: center;
-  color: var(--neon-purple);
-  font-weight: 600;
-  text-shadow: 0 0 6px var(--neon-purple);
-}
-
 .customer-logos {
   display: flex;
   justify-content: center;
