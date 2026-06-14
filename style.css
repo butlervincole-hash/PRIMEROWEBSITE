@@ -420,18 +420,34 @@ header {
   transition: 0.3s ease;
 }
 
+.customer-logos img {
+  background: rgba(0, 255, 0, 0.05);
+  border-radius: 8px;
+  padding: 6px;
+  box-shadow: 0 0 12px var(--neon-green);
+}
+
 .customer-logos img:hover {
   transform: scale(1.1);
   filter: drop-shadow(0 0 12px var(--neon-purple));
 }
 
 .trusted-customers p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 700;
-  color: var(--neon-green);
-  text-shadow: 0 0 8px var(--neon-green), 0 0 16px var(--neon-purple);
+  background: linear-gradient(90deg, var(--neon-green), var(--neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px var(--neon-purple);
   letter-spacing: 1px;
   animation: flicker 2s infinite alternate;
+}
+
+.customer-logos img {
+  height: 70px !important; /* forces larger size */
+  width: auto;
+  filter: drop-shadow(0 0 8px var(--neon-green));
+  transition: 0.3s ease;
 }
 
 /* ============================
@@ -1461,6 +1477,8 @@ h2 {
   50% { opacity: 0.85; }
   100% { opacity: 1; }
 }
+
+
 
 
 
