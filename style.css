@@ -863,26 +863,6 @@ header {
     drop-shadow(0 0 22px var(--neon-green));
 }
 
-.testimonial-img-bottom {
-  width: 90%;
-  max-width: 320px;
-  height: auto;
-  border-radius: 10px;
-  transform: rotate(-3deg);
-  opacity: 0.95;
-  box-shadow: 0 0 14px var(--neon-green);
-  transition: transform 0.35s ease, filter 0.35s ease;
-  align-self: end;
-  margin-bottom: 25px;
-}
-
-.testimonial-img-bottom:hover {
-  transform: scale(1.08) rotate(-3deg);
-  filter:
-    drop-shadow(0 0 14px var(--neon-green))
-    drop-shadow(0 0 22px var(--neon-green));
-}
-
 .testimonial-text {
   display: flex;
   flex-direction: column;
