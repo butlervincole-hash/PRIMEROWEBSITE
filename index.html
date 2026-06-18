@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -15,139 +15,163 @@
 
 <body>
 
-<!-- HEADER -->
+<!-- ============================
+     HEADER + NAVIGATION
+============================ -->
 <header>
   <nav class="nav">
+
     <div class="nav-left">
       <img src="Assets/MagLogo.png" alt="Still Weird Magnolias Logo" class="small-logo">
       <h3 class="nav-title">Still Weird Magnolias</h3>
     </div>
-
-    <ul class="nav-links-desktop">
-  <li><a href="#about">About</a></li>
-  <li><a href="#blog">Blog</a></li>
-  <li><a href="#pricing">Pricing</a></li>
-  <li><a href="#contact">Contact Us</a></li>
-  <li><a href="#login">Login</a></li>
-  <li><a href="#signup" class="signup-btn">Sign Up</a></li>
-</ul>
 
     <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
       <span></span><span></span><span></span>
     </button>
 
     <ul class="nav-menu">
-      <li><a href="#hero-section">Home</a></li>
-      <li><a href="#features-section">Features</a></li>
-      <li><a href="#pricing-section">Pricing</a></li>
-      <li><a href="#testimonials-section">Testimonials</a></li>
-      <li><a href="#faq-section">FAQ</a></li>
-      <li><a href="#cta-section">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#login">Login</a></li>
+      <li><a href="#signup">Sign Up</a></li>
     </ul>
+
   </nav>
 </header>
 
 <main>
 
-<!-- HERO -->
-<section id="hero-section" class="hero-section">
- 
-<div class="hero-center">
-  <h1>Beautiful React Templates <span>for you.</span></h1>
-  <p>Our templates are easy to set up, understand, and customize. Fully modular components with a variety of pages and features.</p>
+<!-- ============================
+     HERO SECTION
+============================ -->
+<section id="hero" class="hero-section">
 
-  <!-- Input field moved here -->
-  <div class="email-input-container">
-    <input type="email" placeholder="Your E-mail Address" class="email-input">
-    <button class="get-started-btn">Get Started</button>
+  <div class="hero-col hero-left">
+    <img src="Assets/MagLogo.png" class="hero-logo" alt="MagLogo">
   </div>
 
-  <!-- Trusted Customers section below -->
-  <div class="trusted-customers">
-    <p>OUR TRUSTED CUSTOMERS</p>
-    <div class="customer-logos">
-    <img src="Assets/tcplogoneon.png" alt="TCP logo">
-    <img src="Assets/logobbq1.png" alt="BBQ logo">
-    <img src="Assets/lastcallchurch.png" alt="Church logo">
-  </div>
- </div>
+  <div class="hero-col hero-center">
+    <h1>Beautiful React Templates <span class="accent">for you.</span></h1>
+    <p>Our templates are easy to set up, understand, and customize. Fully modular components with a variety of pages and features.</p>
+
+<div class="hero-input-row">
+  <input type="email" placeholder="Enter your email" class="email-input">
+  <button class="get-started-btn">Get Started</button>
 </div>
+
+  </div>
 
   <div class="hero-col hero-right">
     <img src="Assets/winterdesigner.png" class="hero-side-image" alt="Desk Lady">
   </div>
+
 </section>
 
-<!-- FEATURES -->
-<section id="features-section" class="section">
+<!-- ============================
+     CUSTOMERS
+============================ -->
+<section id="customers" class="section customers-section">
+
+  <h2 class="section-title">
+    Our Trusted <span class="purple-word">Customers</span>
+  </h2>
+
+  <div class="customer-logos">
+    <img src="Assets/tcplogoneon.png" alt="TCP Logo" class="customer-logo">
+    <img src="Assets/logobbq1.png" alt="BBQ logo" class="customer-logo">
+    <img src="Assets/lastcallchurch.png" alt="Last Call Church Logo" class="customer-logo">
+  </div>
+
+</section>
+
+<!-- ============================
+     FEATURES
+============================ -->
+<section id="features" class="section">
+
   <h3 class="features-label">Features</h3>
   <h2 class="services-title">We Have Amazing <span>Services</span></h2>
   <p class="services-subtext">Unique, timely, efficient, & user-friendly.</p>
 
-  <div class="neon-icons">
-    <div class="icon-box">
-      <img src="Assets/Secure.png" alt="Secure Icon" />
-      <h4>Secure</h4>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </div>
+  <div class="features-wrapper">
+    <div class="neon-icons">
 
-    <div class="icon-box">
-      <img src="Assets/sliders.png" alt="Custom Icon" />
-      <h4>Customizable</h4>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </div>
+      <div class="icon-box">
+        <img src="Assets/Secure.png" alt="Secure Icon" />
+        <h4>Secure</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
 
-    <div class="icon-box">
-      <img src="Assets/bolt.png" alt="Fast Icon" />
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </div>
+      <div class="icon-box">
+        <img src="Assets/sliders.png" alt="Custom Icon" />
+        <h4>Customizable</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
 
-    <div class="icon-box">
-      <img src="Assets/Reliable.png" alt="Reliable Icon" />
-      <h4>Reliable</h4>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </div>
+      <div class="icon-box">
+        <img src="Assets/bolt.png" alt="Fast Icon" />
+        <h4>Fast</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
 
-    <div class="icon-box">
-      <img src="Assets/24seven.png" alt="Support Icon" />
-      <h4>24/7 Support</h4>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </div>
+      <div class="icon-box">
+        <img src="Assets/Reliable.png" alt="Reliable Icon" />
+        <h4>Reliable</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
 
-    <div class="icon-box">
-      <img src="Assets/checkmark.png" alt="Easy Icon" />
-      <h4>Easy</h4>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <div class="icon-box">
+        <img src="Assets/24seven.png" alt="Support Icon" />
+        <h4>24/7 Support</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
+      <div class="icon-box">
+        <img src="Assets/checkmark.png" alt="Easy Icon" />
+        <h4>Easy</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+
     </div>
   </div>
+
 </section>
 
-<!-- QUALITY -->
-<section id="quality-section" class="quality-section">
+<!-- ============================
+     QUALITY WORK
+============================ -->
+<section id="quality" class="quality-section">
+
   <div class="quality-container">
+
     <div class="quality-text">
       <p class="quality-label">QUALITY WORK</p>
       <h2>Designed & Developed by <span>Professionals</span></h2>
       <p class="quality-subtext">
-        Our professionals come from a world immersed in design as keen developers who are passionate in making your ideas have a pulse.
+        Our professionals come from a world immersed in design as keen developers who are passionate
+        in making your ideas have a pulse.
       </p>
-
-      <div class="email-input-container">
-        <input type="email" placeholder="Your E-mail Address" class="email-input">
-        <button class="get-started-btn">Get Started</button>
-      </div>
+      <a href="#" class="learn-more-btn">Learn More</a>
     </div>
 
     <div class="quality-image">
-      <img src="Assets/prouddesigner.svg" alt="Designer at computer">
+      <img src="Assets/prouddesigner.svg" alt="Quality Work Image">
     </div>
+
   </div>
+
 </section>
 
-<!-- STEPS -->
-<section id="steps-section" class="steps-section">
+<!-- ============================
+     STEPS
+============================ -->
+<section id="steps" class="steps-section">
+
   <div class="steps-container">
+
     <div class="steps-image">
       <img src="Assets/join.png" alt="Steps Illustration">
     </div>
@@ -170,48 +194,57 @@
         <h3><span class="step-number">03</span> Run</h3>
         <p>Follow the instructions to set up and customize the template to your needs.</p>
       </div>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- VALUES -->
-<section id="values-section" class="values-section">
+<!-- ============================
+     VALUES
+============================ -->
+<section id="values" class="values-section">
+
   <div class="values-container">
 
     <div class="values-text">
       <p class="values-label">VALUES</p>
-      <h2>We Always Abide by <span>Our Principles</span></h2>
-      <p class="values-section-subtext">
-        Our templates are built on tasteful class and seamless user experiences. 
-        We promise affordability and professionalism in every design.
-      </p>
+      <h2>We Always Abide by Our <span>Principles</span></h2>
+      <p class="values-subtext">Tasteful Class & Seamless User Experiences.</p>
 
-      <div class="values-row">
-        <div class="value-item">
-          <span class="value-icon">$</span>
+      <div class="values-grid">
+
+        <div class="value-card">
+          <div class="value-icon green">$</div>
           <h4>Affordable</h4>
           <p>We promise to offer you the best rate we can – at par with the industry standard.</p>
         </div>
 
-        <div class="value-item">
-          <span class="value-icon">💼</span>
+        <div class="value-card">
+          <div class="value-icon purple">💼</div>
           <h4>Professionalism</h4>
           <p>We assure you that our templates are designed and created by professional designers.</p>
         </div>
+
       </div>
 
-      <button class="learn-more-btn">Learn More</button>
+      <a href="#" class="learn-more-btn">Learn More</a>
     </div>
 
     <div class="values-image">
-      <img src="valuesNprinciples.png" alt="Values illustration">
+      <img src="Assets/valuesNprinciples.png" alt="Values and Principles Illustration">
     </div>
 
   </div>
+
 </section>
 
-<!-- PRICING -->
-<section id="pricing-section" class="pricing-section">
+<!-- ============================
+     PRICING
+============================ -->
+<section id="pricing" class="pricing-section">
+
   <p class="pricing-label">PRICING</p>
   <h2>Reasonable & Flexible <span>Plans</span></h2>
   <p class="pricing-subtext">Pricing accessible to individuals & businesses of all sizes.</p>
@@ -222,13 +255,12 @@
       <h3>PERSONAL</h3>
       <h1>$17.99</h1>
       <p class="monthly">MONTHLY</p>
-      <h4>For All Individuals</h4>
+      <h4>For Individuals</h4>
       <ul>
         <li>30 Templates</li>
         <li>7 Landing Pages</li>
         <li>12 Internal Pages</li>
         <li>Basic Assistance</li>
-        <li>4 Logos</li>
       </ul>
       <a href="#" class="buy-btn green-btn">BUY NOW</a>
     </div>
@@ -258,53 +290,78 @@
         <li>37 Internal Pages</li>
         <li>Personal Assistance</li>
       </ul>
-    <div>
       <a href="#" class="buy-btn red-btn">BUY NOW</a>
     </div>
 
   </div>
-  <div class="neon-divider"></div>
+
 </section>
 
-<!-- TESTIMONIALS -->
-<section id="testimonials-section" class="testimonials-section">
+<!-- ============================
+     TESTIMONIALS
+============================ -->
+<section id="testimonials" class="testimonials-section">
+
   <div class="testimonials-container">
 
     <div class="testimonial-image">
-      <img src="Assets/clientsloveus.png" alt="Clients Love Us" class="testimonial-img-top">
+      <img src="Assets/clientsloveus.png" alt="Clients Love Us">
     </div>
 
     <div class="testimonial-text">
-      <p class="testimonial-label">TESTIMONIALS</p>
-      <span class="neon-name"></span>
-      <h2>Clients Love <span>Us</span></h2>
 
-      <div class="testimonial-card">
-        
-        <div class="testimonial-content">
-        <p class="testimonial-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
+      <p class="testimonial-label">TESTIMONIALS</p>
+      <h2>Our Clients <span>Love Us</span></h2>
+
+      <h3 class="testimonial-title">Amazing User Experience</h3>
+      <div class="stars">★★★★★</div>
+
+      <p class="testimonial-subtext">
+        "Still Weird Magnolias made the process incredibly exciting, smooth, and enjoyable start to finish."
+        <span class="neon-name"> - Charlotte Hale</span>
+      </p>
+
+      <div class="testimonial-author">
+        <img src="Assets/CharlotteH.png" alt="testionial" class="author-img"/>
+
+      <div>
+        <h4>Charlotte Hale</h4>
+        <p>Director, Delos Inc.</p>
+      </div>
       </div>
 
-      <div class="testimonial-card">
-        <img src="Assets/JordanM.png" class="author-img" alt="Jordan Miles">
-        <div class="testimonial-content">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-subtext">"The team at Still Weird Magnolias provided exceptional support throughout the project. Their attention to detail and commitment to quality exceeded our expectations."</p>
-          <span class="neon-name">- Jordan Miles</span>
-          <p>Founder, NeonWorks LLC</p>
+      <div class="testimonial-divider"></div>
+
+      <div class="stars">★★★★★</div>
+
+      <p class="testimonial-subtext">
+        "The team at Still Weird Magnolias provided exceptional support throughout the project. Their attention to detail and commitment to quality exceeded our expectations."
+        <span class="neon-name"> - Jordan Miles</span>
+      </p>
+
+      <div class="testimonial-author">
+        <img src="Assets/JordanM.png" alt="testimonial" class="author-img" />
+        <div>
+          <h4>Jordan Miles</h4>
+          <p>Founder, NeonWorks</p>
         </div>
       </div>
 
-    </div>
+     </div>
+
   </div>
-  <div class="neon-divider"></div>
+
 </section>
 
-<!-- FAQ -->
-<section id="faq-section" class="section">
+<!-- ============================
+     FAQ
+============================ -->
+<section id="faq" class="section">
+
   <h2>FAQ</h2>
 
   <div class="faq">
+
     <div class="faq-item">
       <button class="faq-question">Can I use these templates commercially?</button>
       <p class="faq-answer">Yes, you can.</p>
@@ -314,80 +371,92 @@
       <button class="faq-question">Do I need to know React?</button>
       <p class="faq-answer">No, not required.</p>
     </div>
+
   </div>
+
 </section>
 
-<!-- CTA FOOTER -->
-<section class="footer-banner">
-  <p>Developers all over the world are happily using Still Weird Magnolias.</p>
+</main>
 
-  <div class="cta-buttons-container">
-    <button class="btn">GET STARTED</button>
-    <button class="btn">CONTACT US</button>
+<!-- ============================
+     CTA FOOTER
+============================ -->
+<section id="cta-footer" class="section footer-banner">
+
+  <div class="cta-content">
+    <p>Developers all over the world are happily using Still Weird Magnolias.</p>
+
+    <div class="cta-buttons">
+      <a href="#pricing" class="cta-btn black-btn">Get Started</a>
+      <a href="#contact" class="cta-btn contact-btn">Contact Us</a>
+    </div>
   </div>
+
 </section>
 
-<!-- FOOTER -->
+<!-- ============================
+     FOOTER
+============================ -->
 <footer class="footer-main">
 
+  <!-- Footer Columns -->
   <div class="footer-columns">
-
     <div class="footer-col">
       <h4>MAIN</h4>
       <ul>
-        <li><a href="#features-section">Features</a></li>
-        <li><a href="#faq-section">FAQs</a></li>
-        <li><a href="#cta-section">Support</a></li>
-        <li><a href="#hero-section">About Us</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#about">About Us</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>PRODUCT</h4>
       <ul>
-        <li><a href="#hero-section">Log In</a></li>
-        <li><a href="#pricing-section">Personal</a></li>
-        <li><a href="#pricing-section">Business</a></li>
-        <li><a href="#pricing-section">Team</a></li>
+        <li><a href="#login">Log In</a></li>
+        <li><a href="#personal">Personal</a></li>
+        <li><a href="#business">Business</a></li>
+        <li><a href="#team">Team</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>PRESS</h4>
       <ul>
-        <li><a href="#hero-section">Logos</a></li>
-        <li><a href="#hero-section">Events</a></li>
-        <li><a href="#hero-section">Stories</a></li>
-        <li><a href="#hero-section">Office</a></li>
+        <li><a href="#logos">Logos</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#stories">Stories</a></li>
+        <li><a href="#office">Office</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>TEAM</h4>
       <ul>
-        <li><a href="#hero-section">Career</a></li>
-        <li><a href="#hero-section">Founders</a></li>
-        <li><a href="#hero-section">Culture</a></li>
-        <li><a href="#hero-section">Onboarding</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#founders">Founders</a></li>
+        <li><a href="#culture">Culture</a></li>
+        <li><a href="#onboarding">Onboarding</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h4>LEGAL</h4>
       <ul>
-        <li><a href="#hero-section">GDPR</a></li>
-        <li><a href="#hero-section">Privacy Policy</a></li>
-        <li><a href="#hero-section">Terms of Service</a></li>
-        <li><a href="#hero-section">Disclaimer</a></li>
+        <li><a href="#gdpr">GDPR</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#terms">Terms of Service</a></li>
+        <li><a href="#disclaimer">Disclaimer</a></li>
       </ul>
     </div>
-
   </div>
 
+  <!-- Footer Bottom -->
   <div class="footer-bottom">
     <div class="footer-logo">
-      <img src="Assets/MagLogo.png" alt="Logo" class="small-logo" />
-      <span class="footer-brand">Still Weird Magnolias</span>
+      <img src="Assets/MagLogo.png" alt="Logo" />
+      <span>Still Weird Magnolias</span>
     </div>
 
     <p>© 2026 Still Weird Magnolias. All Rights Reserved.</p>
@@ -402,6 +471,9 @@
 
 </footer>
 
+<!-- ============================
+     SCRIPTS
+============================ -->
 <script>
   function toggleMenu() {
     document.querySelector('.nav-menu').classList.toggle('active');
