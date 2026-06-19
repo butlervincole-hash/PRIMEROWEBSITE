@@ -1006,13 +1006,14 @@ header {
   margin-bottom: 15px;
 }
 
+
 /* Neon divider */
 .testimonial-divider {
   height: 2px;
   width: 100%;
   background: linear-gradient(90deg, var(--neon-purple), var(--neon-green));
   box-shadow: 0 0 10px var(--neon-purple), 0 0 10px var(--neon-green);
-  margin: 25px 0;
+  margin: 25px 0 15px;
   border-radius: 2px;
   animation: glowPulse 3s ease-in-out infinite;
 }
@@ -1030,6 +1031,7 @@ header {
 .stars {
   color: gold;
   font-size: 1.2rem;
+  margin-top: 10px;
   margin-bottom: 10px;
   text-shadow: 0 0 6px var(--neon-purple);
 }
