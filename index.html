@@ -15,15 +15,17 @@
 
 <body>
 
-<!-- ============================
-     HEADER + NAVIGATION
-============================ -->
+<!-- =========================================================
+NAVIGATION
+========================================================= -->
 <nav class="nav">
+
   <div class="nav-left">
     <img src="Assets/MagLogo.png" alt="Still Weird Magnolias Logo" class="small-logo">
     <h3 class="nav-title">Still Weird Magnolias</h3>
   </div>
 
+  <!-- Desktop Menu -->
   <ul class="nav-links-desktop">
     <li><a href="#about">About</a></li>
     <li><a href="#blog">Blog</a></li>
@@ -33,41 +35,48 @@
     <li><a href="#signup" class="signup-btn">Sign Up</a></li>
   </ul>
 
+  <!-- Hamburger -->
   <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
     <span></span><span></span><span></span>
   </button>
+
+  <!-- Mobile Dropdown Menu -->
+  <ul class="nav-menu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#login">Login</a></li>
+    <li><a href="#signup">Sign Up</a></li>
+  </ul>
+
 </nav>
 
-<!-- ============================
-     HERO SECTION
-============================ -->
+<!-- =========================================================
+HERO SECTION
+========================================================= -->
 <section id="hero" class="hero-section">
 
-<div class="hero-col hero-center">
+  <div class="hero-col hero-center">
     <h1>Beautiful React Templates <span class="accent">for you.</span></h1>
     <p>Our templates are easy to set up, understand, and customize. Fully modular components with a variety of pages and features.</p>
 
-<div class="hero-input-row">
-  <div class="email-input-container">
-    <input type="email" placeholder="Enter your email" class="email-input">
-    <button class="get-started-btn">GET STARTED</button>
-  </div>
-</div>
+    <div class="hero-input-row">
+      <div class="email-input-container">
+        <input type="email" placeholder="Enter your email" class="email-input">
+        <button class="get-started-btn">GET STARTED</button>
+      </div>
+    </div>
 
-<section id="customers" class="section customers-section">
+    <section id="customers" class="section customers-section">
+      <h2 class="section-title">Our Trusted <span class="purple-word">Customers</span></h2>
 
-  <h2 class="section-title">
-    Our Trusted <span class="purple-word">Customers</span>
-  </h2>
-
-  <div class="customer-logos">
-    <img src="Assets/tcplogoneon.png" alt="TCP Logo" class="customer-logo">
-    <img src="Assets/logobbq1.png" alt="BBQ logo" class="customer-logo">
-    <img src="Assets/lastcallchurch.png" alt="Last Call Church Logo" class="customer-logo">
-  </div>
-
-</section>
-
+      <div class="customer-logos">
+        <img src="Assets/tcplogoneon.png" alt="TCP Logo" class="customer-logo">
+        <img src="Assets/logobbq1.png" alt="BBQ logo" class="customer-logo">
+        <img src="Assets/lastcallchurch.png" alt="Last Call Church Logo" class="customer-logo">
+      </div>
+    </section>
   </div>
 
   <div class="hero-col hero-right">
@@ -76,9 +85,9 @@
 
 </section>
 
-<!-- ============================
-     FEATURES
-============================ -->
+<!-- =========================================================
+FEATURES
+========================================================= -->
 <section id="features" class="section">
 
   <h3 class="features-label">Features</h3>
@@ -129,9 +138,9 @@
 
 </section>
 
-<!-- ============================
-     QUALITY WORK
-============================ -->
+<!-- =========================================================
+QUALITY WORK
+========================================================= -->
 <section id="quality" class="quality-section">
 
   <div class="quality-container">
@@ -154,9 +163,9 @@
 
 </section>
 
-<!-- ============================
-     STEPS
-============================ -->
+<!-- =========================================================
+STEPS
+========================================================= -->
 <section id="steps" class="steps-section">
 
   <div class="steps-container">
@@ -190,9 +199,9 @@
 
 </section>
 
-<!-- ============================
-     VALUES
-============================ -->
+<!-- =========================================================
+VALUES
+========================================================= -->
 <section id="values" class="values-section">
 
   <div class="values-container">
@@ -229,9 +238,9 @@
 
 </section>
 
-<!-- ============================
-     PRICING
-============================ -->
+<!-- =========================================================
+PRICING
+========================================================= -->
 <section id="pricing" class="pricing-section">
 
   <p class="pricing-label">PRICING</p>
@@ -285,9 +294,10 @@
   </div>
 
 </section>
-<!-- ============================
-     TESTIMONIALS
-============================ -->
+
+<!-- =========================================================
+TESTIMONIALS
+========================================================= -->
 <section id="testimonials" class="testimonials-section">
 
   <div class="testimonials-container">
@@ -304,22 +314,16 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.
       </p>
 
-      <div>
-        <h4>Amazing User Experience</h4>
-      </div>
+      <h4>Amazing User Experience</h4>
 
-      <!-- Neon divider ABOVE testimonial -->
       <div class="testimonial-divider"></div>
 
-      <!-- Testimonial text BELOW divider -->
       <p class="testimonial-subtext">
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur..."
       </p>
 
-      <!-- Stars BELOW testimonial text -->
       <div class="stars">★★★★★</div>
 
-      <!-- Author info BELOW stars -->
       <div class="testimonial-author">
         <img src="Assets/JordanM.png" alt="testimonial" class="author-img" />
         <div>
@@ -329,12 +333,14 @@
       </div>
 
     </div>
+
   </div>
+
 </section>
 
-<!-- ============================
-     FAQ
-============================ -->
+<!-- =========================================================
+FAQ
+========================================================= -->
 <section id="faq" class="section">
 
   <h2>FAQ</h2>
@@ -355,11 +361,9 @@
 
 </section>
 
-</main>
-
-<!-- ============================
-     CTA FOOTER
-============================ -->
+<!-- =========================================================
+CTA FOOTER
+========================================================= -->
 <section id="cta-footer" class="section footer-banner">
 
   <div class="cta-content">
@@ -373,13 +377,13 @@
 
 </section>
 
-<!-- ============================
-     FOOTER
-============================ -->
+<!-- =========================================================
+FOOTER
+========================================================= -->
 <footer class="footer-main">
 
-  <!-- Footer Columns -->
   <div class="footer-columns">
+
     <div class="footer-col">
       <h4>MAIN</h4>
       <ul>
@@ -429,10 +433,11 @@
         <li><a href="#disclaimer">Disclaimer</a></li>
       </ul>
     </div>
+
   </div>
 
-  <!-- Footer Bottom -->
   <div class="footer-bottom">
+
     <div class="footer-logo">
       <img src="Assets/MagLogo.png" alt="Logo" />
       <span>Still Weird Magnolias</span>
@@ -446,18 +451,19 @@
       <img src="Assets/youtubelogo.png" alt="YouTube">
       <img src="Assets/instalogo.png" alt="Instagram">
     </div>
+
   </div>
 
 </footer>
 
-<!-- ============================
-     SCRIPTS
-============================ -->
+<!-- =========================================================
+SCRIPTS
+========================================================= -->
 <script>
-  function toggleMenu() {
-    document.querySelector('.nav-menu').classList.toggle('active');
-    document.querySelector('.hamburger').classList.toggle('open');
-  }
+function toggleMenu() {
+  document.querySelector('.nav-menu').classList.toggle('active');
+  document.querySelector('.hamburger').classList.toggle('open');
+}
 </script>
 
 </body>
