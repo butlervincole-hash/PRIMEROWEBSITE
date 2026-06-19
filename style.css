@@ -119,6 +119,7 @@ header {
   cursor: pointer;
   padding: 0;
   margin-right: 15px;
+  margin-left: 20px
 }
 
 .hamburger span {
@@ -146,6 +147,13 @@ header {
   background: var(--neon-purple);
   box-shadow: 0 0 10px var(--neon-green);
 }
+
+@media (min-width: 900px) {
+  .hamburger {
+    margin-left: 24px;
+  }
+}
+
 
 /* ============================
    DROPDOWN MENU
