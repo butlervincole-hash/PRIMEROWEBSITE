@@ -208,6 +208,17 @@ header {
   text-align: center;
 }
 
+.hero-side-image {
+  width: 100%;
+  max-width: 380px; /* controls how large it can get */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--neon-green);
+  display: block;
+  margin: 0 auto;
+}
+
+
 /* ============================
    HERO TEXT
 ============================ */
@@ -1407,5 +1418,12 @@ body, h1, h2, h3, h4, h5, h6, p, a, span {
     justify-content: center;
   }
 }
+
+@media (max-width: 900px) {
+  .hero-side-image {
+    max-width: 260px;
+  }
+}
+
 
 
