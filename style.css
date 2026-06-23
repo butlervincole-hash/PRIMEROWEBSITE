@@ -248,9 +248,9 @@ HERO SECTION
 ========================================================= */
 .hero-section {
   display: flex;
-  justify-content: center;   /* centered both columns */
+  justify-content: center; /* centers both columns horizontally */
   align-items: center;
-  gap: 60px;                 /* space between text + image */
+  gap: 40px; /* smaller gap so text and image sit closer together */
   padding: 100px 40px;
   background: linear-gradient(135deg,
     rgba(57,255,20,0.18),
@@ -261,17 +261,18 @@ HERO SECTION
   border-top: 2px solid var(--neon-purple);
   border-bottom: 2px solid var(--neon-green);
   box-shadow: 0 0 20px var(--neon-purple), 0 0 20px var(--neon-green) inset;
+  max-width: 1200px; /* keeps content centered on wide screens */
+  margin: 0 auto; /* centers the entire hero section */
 }
 
 .hero-col {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* centers content vertically */
-  text-align: center;        /* centers text horizontally */
+  justify-content: center;
+  text-align: center;
 }
 
-/* HERO TEXT */
 .hero-center h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 2.8rem;
@@ -286,6 +287,17 @@ HERO SECTION
   margin: 0 auto 25px;
   font-weight: 600;
   color: var(--light-gray);
+}
+
+/* CENTERED EMAIL INPUT ROW */
+.hero-input-row {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 12px;
+  margin: 40px auto;
+  width: 100%;
+  max-width: 500px;
 }
 
 /* CENTERED EMAIL INPUT ROW */
