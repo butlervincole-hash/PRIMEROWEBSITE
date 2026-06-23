@@ -91,6 +91,7 @@ NAVIGATION
   width: 55px;
   filter: drop-shadow(0 0 6px var(--neon-green));
   transition: 0.3s ease;
+  margin-right: 12px;
 }
 
 .small-logo:hover {
@@ -262,6 +263,8 @@ HERO SECTION
   border-top: 2px solid var(--neon-purple);
   border-bottom: 2px solid var(--neon-green);
   box-shadow: 0 0 20px var(--neon-purple), 0 0 20px var(--neon-green) inset;
+  max-width: 1200px; /* ✅ keeps hero centered */
+  margin: 0 auto; /* ✅ centers horizontally */
 }
 
 .hero-col {
@@ -302,6 +305,7 @@ HERO SECTION
 
 /* Email Input */
 .email-input-container {
+  position: relative;
   display: flex;
   align-items: center;
   background: #000;
@@ -323,11 +327,13 @@ HERO SECTION
 }
 
 .get-started-btn {
+  position: absolute;
+  right: 6px;
   background: var(--neon-green);
   color: #000;
   border: none;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 8px 16px;
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 0 10px var(--neon-green);
@@ -1133,3 +1139,20 @@ FOOTER MAIN
     grid-template-columns: 1fr;
   }
 }
+
+/* Desktop default: hide hamburger */
+.hamburger {
+  display: none;
+}
+
+/* Show hamburger only on smaller screens */
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links-desktop {
+    display: none;
+  }
+}
+
