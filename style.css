@@ -299,6 +299,10 @@ HERO SECTION (Cleaned & Polished)
   position: relative; 
 }
 
+.hero-section {
+  margin-bottom: 40px;
+}
+
 .hero-col {
   flex: 1;
   display: flex;
@@ -454,6 +458,27 @@ SECTION TITLES (Cleaner, Sharper Neon)
 }
 
 /* =========================================================
+NEON DIVIDER (Between Sections)
+========================================================= */
+.neon-divider {
+  width: 85%;
+  height: 4px;
+  margin: 60px auto;
+  border-radius: 3px;
+
+  background: linear-gradient(
+    90deg,
+    var(--neon-green),
+    var(--neon-purple),
+    var(--neon-green)
+  );
+  background-size: 300% 100%;
+  animation: neonWave 4s linear infinite;
+
+  box-shadow: 0 0 12px var(--neon-green);
+}
+
+/* =========================================================
 FEATURES GRID
 ========================================================= */
 .neon-icons {
@@ -529,9 +554,6 @@ FEATURES TEXT STYLING
   text-shadow: 0 0 6px var(--neon-purple);
 }
 
-/* =========================================================
-QUALITY WORK
-========================================================= */
 /* =========================================================
 QUALITY WORK SECTION (Cleaned & Polished)
 ========================================================= */
