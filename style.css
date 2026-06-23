@@ -249,9 +249,9 @@ HERO SECTION
 ========================================================= */
 .hero-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;   /* centered both columns */
   align-items: center;
-  gap: 60px;
+  gap: 60px;                 /* space between text + image */
   padding: 100px 40px;
   background: linear-gradient(135deg,
     rgba(57,255,20,0.18),
@@ -266,9 +266,13 @@ HERO SECTION
 
 .hero-col {
   flex: 1;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centers content vertically */
+  text-align: center;        /* centers text horizontally */
 }
 
+/* HERO TEXT */
 .hero-center h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 2.8rem;
@@ -285,6 +289,7 @@ HERO SECTION
   color: var(--light-gray);
 }
 
+/* CENTERED EMAIL INPUT ROW */
 .hero-input-row {
   display: flex;
   justify-content: center; 
