@@ -588,11 +588,10 @@ VALUES
 
 .values-container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 40px;
-  max-width: 1200px;
-  width: 100%;
+  max-width: 1000px; /* keeps section centered and contained */
   margin: 0 auto;
 }
 
@@ -660,15 +659,23 @@ VALUES
 
 .values-image img {
   width: 100%;
-  max-width: 420px; /* keeps it proportional */
+  max-width: 340px; /* smaller cap for better proportion */
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 0 20px var(--neon-green);
+  display: block;
 }
 
 .values-image img:hover {
   box-shadow: 0 0 25px var(--neon-purple);
   transform: scale(1.03);
   transition: 0.3s ease;
+}
+
+@media (max-width: 900px) {
+  .values-image img {
+    max-width: 260px;
+  }
 }
 
 /* =========================================================
