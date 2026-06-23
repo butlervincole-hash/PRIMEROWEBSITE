@@ -162,7 +162,7 @@ NAVIGATION
 HAMBURGER MENU
 ========================================================= */
 .hamburger {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
@@ -170,6 +170,9 @@ HAMBURGER MENU
   background: none;
   border: none;
   cursor: pointer;
+  padding: 0;
+  margin-left: 20px;
+  margin-right: 0;
 }
 
 .hamburger span {
@@ -219,6 +222,8 @@ MOBILE DROPDOWN MENU
 .nav-menu a {
   color: #fff;
   font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .nav-menu a:hover {
