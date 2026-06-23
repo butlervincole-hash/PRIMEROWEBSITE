@@ -458,21 +458,66 @@ FEATURES GRID
 }
 
 /* =========================================================
+FEATURES GRID
+========================================================= */
+.neon-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .neon-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .neon-icons {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.icon-box {
+  text-align: center;
+  max-width: 220px;
+  padding: 20px;
+  border: 2px solid var(--neon-green);
+  border-radius: 10px;
+  background: rgba(0,0,0,0.6);
+  box-shadow: 0 0 12px var(--neon-green);
+  transition: 0.35s ease;
+}
+
+.icon-box img {
+  width: 120px;
+  filter: drop-shadow(0 0 10px var(--neon-green));
+}
+
+.icon-box:hover {
+  transform: scale(1.12) rotate(1deg);
+  filter: drop-shadow(0 0 14px var(--neon-purple));
+}
+
+/* =========================================================
 FEATURES TEXT STYLING
 ========================================================= */
 
-/* Subtitle: "Unique, timely, efficient, & user-friendly" */
-.features-subtitle {
+/* "Unique, timely, efficient, & user-friendly." */
+.services-subtext {
   color: var(--neon-purple);
   font-weight: 600;
-  margin-bottom: 40px; /* adds space between subtitle and cards */
+  margin-bottom: 40px;          /* space between this text and the cards */
   text-shadow: 0 0 8px var(--neon-purple);
 }
 
 /* Card title: "Secure", "Customizable", etc. */
-.icon-box h3 {
+.icon-box h4 {
   color: var(--neon-green);
-  font-size: 1.3rem; /* slightly larger than body text */
+  font-size: 1.3rem;            /* slightly larger than body text */
   font-weight: 700;
   margin-top: 15px;
   margin-bottom: 8px;
