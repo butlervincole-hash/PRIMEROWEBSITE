@@ -147,15 +147,15 @@ NAVIGATION
   color: var(--neon-green);
   text-shadow: 0 0 10px var(--neon-green);
 }
-
 .signup-btn {
   background: var(--neon-green);
-  color: #000;
+  color: #000; /* crisp black text */
+  font-weight: 700;
   padding: 10px 18px;
   border-radius: 6px;
   border: 2px solid var(--neon-green);
-  box-shadow: 0 0 6px var(--neon-green);
-  text-shadow: none;
+  box-shadow: 0 0 8px var(--neon-green); /* reduced glow */
+  text-shadow: none; /* removes blur */
   transition: 0.3s ease;
 }
 
@@ -163,7 +163,7 @@ NAVIGATION
   background: #000;
   color: var(--neon-purple);
   border-color: var(--neon-purple);
-  box-shadow: 0 0 16px var(--neon-purple);
+  box-shadow: 0 0 12px var(--neon-purple);
 }
 
 /* =========================================================
@@ -276,8 +276,9 @@ RESPONSIVE NAVIGATION
 }
 
 /* =========================================================
-HERO SECTION
+HERO SECTION (Cleaned & Polished)
 ========================================================= */
+
 .hero-section {
   display: flex;
   justify-content: center;
@@ -295,6 +296,7 @@ HERO SECTION
   box-shadow: 0 0 20px var(--neon-purple), 0 0 20px var(--neon-green) inset;
   max-width: 1200px; /* ✅ keeps hero centered */
   margin: 0 auto; /* ✅ centers horizontally */
+  position: relative; 
 }
 
 .hero-col {
@@ -449,31 +451,6 @@ SECTION TITLES (Cleaner, Sharper Neon)
   color: #000;
   -webkit-text-stroke: 1px var(--neon-purple);
   text-shadow: 0 0 4px var(--neon-purple);
-}
-
-/* Section Divider */
-.section::after {
-  content: '';
-  display: block;
-  width: 85%;
-  height: 4px;
-  margin: 60px auto 0;
-  border-radius: 3px;
-  background: linear-gradient(90deg, var(--neon-green), var(--neon-purple), var(--neon-green));
-  background-size: 300% 100%;
-  animation: neonWave 4s linear infinite;
-}
-
-.hero-section::after {
-  content: '';
-  display: block;
-  width: 85%;
-  height: 4px;
-  margin: 60px auto 0;
-  border-radius: 3px;
-  background: linear-gradient(90deg, var(--neon-green), var(--neon-purple), var(--neon-green));
-  background-size: 300% 100%;
-  animation: neonWave 4s linear infinite;
 }
 
 /* =========================================================
