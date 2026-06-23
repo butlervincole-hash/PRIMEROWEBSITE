@@ -591,11 +591,20 @@ VALUES
   align-items: center;
   gap: 60px;
   max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.values-text {
+  max-width: 470px;
 }
 
 .values-grid {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 30px;
+  margin-top: 20px;
 }
 
 .value-card {
@@ -605,6 +614,8 @@ VALUES
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 0 12px var(--neon-purple);
+  font-size: 1.3rem;
+  margin-bottom: 8px;
   transition: 0.3s ease;
 }
 
