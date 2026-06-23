@@ -678,7 +678,7 @@ VALUES BUTTON
 .values-button-container {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 30px; /* adds space below cards */
 }
 
 .learn-more-btn {
