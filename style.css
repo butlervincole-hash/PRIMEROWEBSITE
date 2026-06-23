@@ -532,6 +532,9 @@ FEATURES TEXT STYLING
 /* =========================================================
 QUALITY WORK
 ========================================================= */
+/* =========================================================
+QUALITY WORK SECTION (Cleaned & Polished)
+========================================================= */
 .quality-section {
   display: flex;
   justify-content: center;
@@ -540,7 +543,9 @@ QUALITY WORK
   background: #000;
   border-top: 2px solid var(--neon-purple);
   border-bottom: 2px solid var(--neon-green);
-  box-shadow: 0 0 20px var(--neon-purple), 0 0 20px var(--neon-green) inset;
+  box-shadow:
+    0 0 20px var(--neon-purple),
+    0 0 20px var(--neon-green) inset;
 }
 
 .quality-container {
@@ -548,6 +553,7 @@ QUALITY WORK
   align-items: center;
   gap: 60px;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .quality-text {
@@ -555,11 +561,101 @@ QUALITY WORK
   text-align: left;
 }
 
-.quality-image img {
-  width: 450px;
-  filter: drop-shadow(0 0 12px var(--neon-green));
+/* =========================================================
+QUALITY WORK SECTION (Cleaned & Polished)
+========================================================= */
+.quality-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  background: #000;
+  border-top: 2px solid var(--neon-purple);
+  border-bottom: 2px solid var(--neon-green);
+  box-shadow:
+    0 0 20px var(--neon-purple),
+    0 0 20px var(--neon-green) inset;
 }
 
+.quality-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.quality-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* =========================================================
+QUALITY TITLE
+========================================================= */
+.quality-label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+  -webkit-text-stroke: 1px var(--neon-purple);
+  text-shadow: 0 0 8px var(--neon-purple);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* =========================================================
+QUALITY IMAGE (Glow + Hover + Pulse)
+========================================================= */
+.quality-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 12px var(--neon-green));
+  box-shadow: 0 0 25px var(--neon-green);
+  transition: 0.3s ease;
+  animation: softPulse 3s ease-in-out infinite;
+}
+
+.quality-image img:hover {
+  box-shadow: 0 0 35px var(--neon-purple);
+  transform: scale(1.03);
+}
+
+/* Glow Animation */
+@keyframes softPulse {
+  0%   { box-shadow: 0 0 20px var(--neon-green); }
+  50%  { box-shadow: 0 0 30px var(--neon-purple); }
+  100% { box-shadow: 0 0 20px var(--neon-green); }
+}
+
+/* =========================================================
+LEARN MORE BUTTON
+========================================================= */
+.learn-more-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: var(--neon-green);
+  color: #000;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 12px var(--neon-green);
+  transition: 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: var(--neon-purple);
+  color: #000;
+  box-shadow: 0 0 18px var(--neon-purple);
+  transform: scale(1.05);
+}
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
 @media (max-width: 900px) {
   .quality-container {
     flex-direction: column;
@@ -567,7 +663,7 @@ QUALITY WORK
   }
 
   .quality-image img {
-    width: 300px;
+    max-width: 300px;
   }
 }
 
