@@ -647,6 +647,34 @@ VALUES
   border: 2px solid var(--neon-purple);
 }
 
+/* =========================================================
+VALUES IMAGE
+========================================================= */
+.values-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.values-image img {
+  width: 100%;
+  max-width: 300px; /* smaller cap for better proportion */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--neon-green);
+  display: block;
+  transition: 0.3s ease;
+}
+
+.values-image img:hover {
+  box-shadow: 0 0 25px var(--neon-purple);
+  transform: scale(1.03);
+}
+
+/* =========================================================
+RESPONSIVE VALUES
+========================================================= */
 @media (max-width: 900px) {
   .values-container {
     flex-direction: column;
@@ -657,24 +685,8 @@ VALUES
     flex-direction: column;
   }
 
-.values-image img {
-  width: 100%;
-  max-width: 340px; /* smaller cap for better proportion */
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 20px var(--neon-green);
-  display: block;
-}
-
-.values-image img:hover {
-  box-shadow: 0 0 25px var(--neon-purple);
-  transform: scale(1.03);
-  transition: 0.3s ease;
-}
-
-@media (max-width: 900px) {
   .values-image img {
-    max-width: 260px;
+    max-width: 240px;
   }
 }
 
