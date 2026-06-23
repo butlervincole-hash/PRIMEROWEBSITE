@@ -285,6 +285,16 @@ HERO SECTION
   color: var(--light-gray);
 }
 
+.hero-input-row {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 12px;
+  margin: 40px auto;
+  width: 100%;
+  max-width: 500px;
+}
+
 /* Email Input */
 .email-input-container {
   display: flex;
