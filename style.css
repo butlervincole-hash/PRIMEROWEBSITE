@@ -150,7 +150,7 @@ NAVIGATION
 
 .signup-btn {
   background: var(--neon-green);
-  color: #000;
+  color: #000; /* ✅ black text for readability */
   font-weight: 700;
   padding: 10px 18px;
   border-radius: 6px;
@@ -805,8 +805,15 @@ VALUES
     flex-direction: column;
   }
 
+  .values-grid {
+  display: flex;
+  align-items: stretch; /* ✅ equal height cards */
+  gap: 30px;
+  margin-top: 20px;
+}
+
   .values-image img {
-    max-width: 240px;
+  max-width: 240px;
   }
 }
 
