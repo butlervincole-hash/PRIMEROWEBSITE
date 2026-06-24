@@ -383,7 +383,7 @@ HERO SECTION (Cleaned & Polished)
 /* Hero Image */
 .hero-side-image {
   width: 100%;
-  max-width: 380px;
+  max-width: 450px;
   border-radius: 10px;
   box-shadow: 0 0 20px var(--neon-green);
 }
