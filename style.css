@@ -736,7 +736,7 @@ STEPS IMAGE (Glow + Hover + Pulse)
 ========================================================= */
 .steps-image img {
   width: 100%;
-  max-width: 420px;
+  max-width: 300px;
   border-radius: 10px;
   filter: drop-shadow(0 0 12px var(--neon-green));
   box-shadow: 0 0 25px var(--neon-green);
@@ -792,6 +792,22 @@ VALUES
 
 .values-text {
   max-width: 470px;
+}
+
+
+/* =========================================================
+VALUES TITLE
+========================================================= */
+.values-label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+  -webkit-text-stroke: 1px var(--neon-purple);
+  text-shadow: 0 0 8px var(--neon-purple);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .values-grid {
@@ -854,7 +870,7 @@ VALUES IMAGE
 
 .values-image img {
   width: 100%;
-  max-width: 300px; /* smaller cap for better proportion */
+  max-width: 450px; /* smaller cap for better proportion */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 20px var(--neon-green);
@@ -1006,7 +1022,7 @@ TESTIMONIALS
 }
 
 .testimonial-image img {
-  max-width: 350px;
+  max-width: 450px;
   border-radius: 10px;
   box-shadow: 0 0 20px var(--neon-green);
 }
@@ -1018,10 +1034,19 @@ TESTIMONIALS
   padding-right: 40px;
 }
 
-.testimonial-label {
-  font-size: 0.9rem;
+
+/* =========================================================
+TESTIMONIALS TITLE
+========================================================= */
+.testimonials-label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
   font-weight: 700;
-  color: var(--neon-purple);
+  color: #000;
+  -webkit-text-stroke: 1px var(--neon-purple);
+  text-shadow: 0 0 8px var(--neon-purple);
+  letter-spacing: 1px;
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
@@ -1111,8 +1136,23 @@ FAQ
 
 .faq-item {
   width: 100%;
-  max-width: 380px;
+  max-width: 450px;
   margin: 0 auto 18px;
+}
+
+/* =========================================================
+FAQ TITLE
+========================================================= */
+.FAQ-label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+  -webkit-text-stroke: 1px var(--neon-purple);
+  text-shadow: 0 0 8px var(--neon-purple);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .faq-question {
