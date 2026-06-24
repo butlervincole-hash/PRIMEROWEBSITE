@@ -720,11 +720,12 @@ STEPS TITLE
 ========================================================= */
 
 .steps-label {
-  font-family: 'Orbitron', sans-serif'
-  font-size: 1.6rem;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem; /* ✅ same as QUALITY WORK */
   font-weight: 700;
   color: #000;
   -webkit-text-stroke: 1px var(--neon-purple);
+  text-shadow: 0 0 8px var(--neon-purple);
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 10px;
