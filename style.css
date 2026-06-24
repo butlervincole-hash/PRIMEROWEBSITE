@@ -768,7 +768,7 @@ VALUES
 
 .values-image img {
   width: 100%;
-  max-width: 450px;
+  max-width: 445px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 20px var(--neon-green);
