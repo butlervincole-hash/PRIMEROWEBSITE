@@ -1,4 +1,3 @@
-
 /* =========================================================
 GLOBAL VARIABLES
 ========================================================= */
@@ -33,20 +32,19 @@ body {
 }
 
 /* =========================================================
-SECTION TITLES (Cleaner, Sharper Neon)
+GLOBAL TYPOGRAPHY
 ========================================================= */
-
 h1, h2, h3, h4 {
-  font-family: 'Black Ops One', cursive;
-  letter-spacing: 0.5px;
-  color: var(--neon-green);
+  font-family: 'Orbitron', sans-serif;
+  color: #000;
+  -webkit-text-stroke: 1px var(--neon-green);
   text-shadow: 0 0 6px var(--neon-green);
+  letter-spacing: 1px;
 }
 
 p {
   color: var(--light-gray);
   line-height: 1.6;
-  text-shadow: none;
 }
 
 a {
@@ -95,12 +93,12 @@ NAVIGATION
   width: 55px;
   filter: drop-shadow(0 0 6px var(--neon-green));
   animation: softPulse 3s ease-in-out infinite;
-  margin-right: 12px;
+  transition: 0.3s ease;
 }
 
 .small-logo:hover {
   transform: scale(1.1) rotate(8deg);
-  filter: drop-shadow(0 0 10px var(--neon-green));
+  filter: drop-shadow(0 0 12px var(--neon-green));
 }
 
 .nav-title {
@@ -109,9 +107,6 @@ NAVIGATION
   color: #000;
   -webkit-text-stroke: 1px var(--neon-green);
   text-shadow: 0 0 6px var(--neon-green);
-  .nav-title {
-  animation: neonFlicker 1.8s ease-in-out infinite, softPulse 3s ease-in-out infinite;
-}
   position: relative;
 }
 
@@ -126,6 +121,11 @@ NAVIGATION
   box-shadow: 0 0 8px var(--neon-purple);
   border-radius: 2px;
   animation: underlineGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes underlineGlow {
+  0% { box-shadow: 0 0 6px var(--neon-purple); }
+  100% { box-shadow: 0 0 14px var(--neon-purple); }
 }
 
 /* Desktop Menu */
@@ -147,15 +147,16 @@ NAVIGATION
   color: var(--neon-green);
   text-shadow: 0 0 10px var(--neon-green);
 }
+
 .signup-btn {
   background: var(--neon-green);
-  color: #000; /* crisp black text */
+  color: #000;
   font-weight: 700;
   padding: 10px 18px;
   border-radius: 6px;
   border: 2px solid var(--neon-green);
-  box-shadow: 0 0 8px var(--neon-green); /* reduced glow */
-  text-shadow: none; /* removes blur */
+  box-shadow: 0 0 8px var(--neon-green);
+  text-shadow: none;
   transition: 0.3s ease;
 }
 
@@ -170,7 +171,7 @@ NAVIGATION
 HAMBURGER MENU
 ========================================================= */
 .hamburger {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
@@ -178,9 +179,6 @@ HAMBURGER MENU
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
-  margin-left: 20px;
-  margin-right: 0;
 }
 
 .hamburger span {
@@ -202,25 +200,13 @@ HAMBURGER MENU
   transform: translateY(-9px) rotate(-45deg);
 }
 
-
-/* Desktop default: hide hamburger */
-.hamburger {
-  display: none;
-}
-
-/* Show hamburger only on smaller screens */
 @media (max-width: 900px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-links-desktop {
-    display: none;
-  }
+  .hamburger { display: flex; }
+  .nav-links-desktop { display: none; }
 }
 
 /* =========================================================
-MOBILE DROPDOWN MENU
+MOBILE MENU
 ========================================================= */
 .nav-menu {
   display: none;
@@ -236,19 +222,13 @@ MOBILE DROPDOWN MENU
   z-index: 999;
 }
 
-.nav-menu.active {
-  display: block;
-}
+.nav-menu.active { display: block; }
 
-.nav-menu li {
-  margin: 12px 0;
-}
+.nav-menu li { margin: 12px 0; }
 
 .nav-menu a {
   color: #fff;
   font-weight: 600;
-  text-decoration: none;
-  transition: 0.3s ease;
 }
 
 .nav-menu a:hover {
@@ -257,28 +237,27 @@ MOBILE DROPDOWN MENU
 }
 
 /* =========================================================
-RESPONSIVE NAVIGATION
+ANIMATIONS
 ========================================================= */
-@media (max-width: 900px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-links-desktop {
-    display: none;
-  }
-}
-
 @keyframes softPulse {
   0% { filter: drop-shadow(0 0 4px var(--neon-green)); }
   50% { filter: drop-shadow(0 0 10px var(--neon-purple)); }
   100% { filter: drop-shadow(0 0 4px var(--neon-green)); }
 }
 
-/* =========================================================
-HERO SECTION (Cleaned & Polished)
-========================================================= */
+@keyframes heroBGShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
 
+@keyframes neonWave {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
+}
+
+/* =========================================================
+HERO SECTION
+========================================================= */
 .hero-section {
   display: flex;
   justify-content: center;
@@ -294,31 +273,17 @@ HERO SECTION (Cleaned & Polished)
   border-top: 2px solid var(--neon-purple);
   border-bottom: 2px solid var(--neon-green);
   box-shadow: 0 0 20px var(--neon-purple), 0 0 20px var(--neon-green) inset;
-  max-width: 1200px; /* ✅ keeps hero centered */
-  margin: 0 auto; /* ✅ centers horizontally */
-  position: relative; 
-}
-
-.hero-section {
-  margin-bottom: 40px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
 }
 
 .hero-col {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;   /* centers content vertically */
-  text-align: center;        /* centers text horizontally */
+  text-align: center;
 }
 
-/* HERO TEXT */
 .hero-center h1 {
-  font-family: 'Orbitron', sans-serif;
   font-size: 2.8rem;
-  color: #000;
-  -webkit-text-stroke: 1px var(--neon-green);
-  text-shadow: 0 0 8px var(--neon-green);
-  animation: softPulse 3s ease-in-out infinite;
   margin-bottom: 15px;
 }
 
@@ -326,10 +291,8 @@ HERO SECTION (Cleaned & Polished)
   max-width: 420px;
   margin: 0 auto 25px;
   font-weight: 600;
-  color: var(--light-gray);
 }
 
-/* ✅ HERO INPUT FIELD + BUTTON FIX */
 .hero-input-row {
   display: flex;
   justify-content: center;
@@ -350,7 +313,7 @@ HERO SECTION (Cleaned & Polished)
 
 .email-input {
   width: 100%;
-  padding: 12px 110px 12px 16px; /* space for button on right */
+  padding: 12px 110px 12px 16px;
   background: transparent;
   border: none;
   color: var(--neon-green);
@@ -380,23 +343,23 @@ HERO SECTION (Cleaned & Polished)
   box-shadow: 0 0 14px var(--neon-purple);
 }
 
-/* Hero Image */
 .hero-side-image {
   width: 100%;
   max-width: 450px;
   border-radius: 10px;
   box-shadow: 0 0 20px var(--neon-green);
+  transition: 0.3s ease;
 }
 
-/* Hero Responsive */
+.hero-side-image:hover {
+  box-shadow: 0 0 25px var(--neon-purple);
+  transform: scale(1.03);
+}
+
 @media (max-width: 900px) {
   .hero-section {
     flex-direction: column;
     text-align: center;
-  }
-
-  .email-input-container {
-    width: 100%;
   }
 
   .hero-side-image {
@@ -440,7 +403,7 @@ SECTION BASE
 }
 
 /* =========================================================
-SECTION TITLES (Cleaner, Sharper Neon)
+SECTION TITLES
 ========================================================= */
 .section-title {
   font-family: 'Orbitron', sans-serif;
@@ -458,14 +421,13 @@ SECTION TITLES (Cleaner, Sharper Neon)
 }
 
 /* =========================================================
-NEON DIVIDER (Between Sections)
+NEON DIVIDER
 ========================================================= */
 .neon-divider {
   width: 85%;
   height: 4px;
   margin: 60px auto;
   border-radius: 3px;
-
   background: linear-gradient(
     90deg,
     var(--neon-green),
@@ -474,7 +436,6 @@ NEON DIVIDER (Between Sections)
   );
   background-size: 300% 100%;
   animation: neonWave 4s linear infinite;
-
   box-shadow: 0 0 12px var(--neon-green);
 }
 
@@ -524,28 +485,24 @@ FEATURES GRID
 }
 
 /* =========================================================
-FEATURES TEXT STYLING
+FEATURES TEXT
 ========================================================= */
-
-/* "Unique, timely, efficient, & user-friendly." */
 .services-subtext {
   color: var(--neon-purple);
   font-weight: 600;
-  margin-bottom: 40px;          /* space between this text and the cards */
+  margin-bottom: 40px;
   text-shadow: 0 0 8px var(--neon-purple);
 }
 
-/* Card title: "Secure", "Customizable", etc. */
 .icon-box h4 {
   color: var(--neon-green);
-  font-size: 1.3rem;            /* slightly larger than body text */
+  font-size: 1.3rem;
   font-weight: 700;
   margin-top: 15px;
   margin-bottom: 8px;
   text-shadow: 0 0 8px var(--neon-green);
 }
 
-/* Card description: "Lorem ipsum..." */
 .icon-box p {
   color: var(--neon-purple);
   font-size: 1rem;
@@ -555,7 +512,7 @@ FEATURES TEXT STYLING
 }
 
 /* =========================================================
-QUALITY WORK SECTION (Cleaned & Polished)
+QUALITY WORK
 ========================================================= */
 .quality-section {
   display: flex;
@@ -583,38 +540,6 @@ QUALITY WORK SECTION (Cleaned & Polished)
   text-align: left;
 }
 
-/* =========================================================
-QUALITY WORK SECTION (Cleaned & Polished)
-========================================================= */
-.quality-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 40px;
-  background: #000;
-  border-top: 2px solid var(--neon-purple);
-  border-bottom: 2px solid var(--neon-green);
-  box-shadow:
-    0 0 20px var(--neon-purple),
-    0 0 20px var(--neon-green) inset;
-}
-
-.quality-container {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.quality-text {
-  flex: 1;
-  text-align: left;
-}
-
-/* =========================================================
-QUALITY TITLE
-========================================================= */
 .quality-label {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.6rem;
@@ -627,9 +552,10 @@ QUALITY TITLE
   margin-bottom: 10px;
 }
 
-/* =========================================================
-QUALITY IMAGE (Glow + Hover + Pulse)
-========================================================= */
+.quality-subtext {
+  margin-top: 10px;
+}
+
 .quality-image img {
   width: 100%;
   max-width: 420px;
@@ -645,16 +571,7 @@ QUALITY IMAGE (Glow + Hover + Pulse)
   transform: scale(1.03);
 }
 
-/* Glow Animation */
-@keyframes softPulse {
-  0%   { box-shadow: 0 0 20px var(--neon-green); }
-  50%  { box-shadow: 0 0 30px var(--neon-purple); }
-  100% { box-shadow: 0 0 20px var(--neon-green); }
-}
-
-/* =========================================================
-LEARN MORE BUTTON
-========================================================= */
+/* Learn More Button */
 .learn-more-btn {
   display: inline-block;
   margin-top: 25px;
@@ -675,9 +592,6 @@ LEARN MORE BUTTON
   transform: scale(1.05);
 }
 
-/* =========================================================
-RESPONSIVE
-========================================================= */
 @media (max-width: 900px) {
   .quality-container {
     flex-direction: column;
@@ -715,13 +629,9 @@ STEPS
   text-align: left;
 }
 
-/* =========================================================
-STEPS TITLE
-========================================================= */
-
 .steps-label {
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.6rem; /* ✅ same as QUALITY WORK */
+  font-size: 1.6rem;
   font-weight: 700;
   color: #000;
   -webkit-text-stroke: 1px var(--neon-purple);
@@ -731,9 +641,15 @@ STEPS TITLE
   margin-bottom: 10px;
 }
 
-/* =========================================================
-STEPS IMAGE (Glow + Hover + Pulse)
-========================================================= */
+.step-item {
+  margin-top: 20px;
+}
+
+.step-number {
+  color: var(--neon-purple);
+  margin-right: 8px;
+}
+
 .steps-image img {
   width: 100%;
   max-width: 300px;
@@ -747,17 +663,6 @@ STEPS IMAGE (Glow + Hover + Pulse)
 .steps-image img:hover {
   box-shadow: 0 0 35px var(--neon-purple);
   transform: scale(1.03);
-}
-
-/* =========================================================
-RESPONSIVE
-========================================================= */
-
-/* Glow Animation */
-@keyframes softPulse {
-  0%   { box-shadow: 0 0 20px var(--neon-green); }
-  50%  { box-shadow: 0 0 30px var(--neon-purple); }
-  100% { box-shadow: 0 0 20px var(--neon-green); }
 }
 
 @media (max-width: 900px) {
@@ -786,7 +691,7 @@ VALUES
   justify-content: center;
   align-items: center;
   gap: 40px;
-  max-width: 1000px; /* keeps section centered and contained */
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -794,10 +699,6 @@ VALUES
   max-width: 470px;
 }
 
-
-/* =========================================================
-VALUES TITLE
-========================================================= */
 .values-label {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.6rem;
@@ -825,7 +726,7 @@ VALUES TITLE
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 0 12px var(--neon-purple);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-bottom: 8px;
   transition: 0.3s ease;
 }
@@ -858,9 +759,6 @@ VALUES TITLE
   border: 2px solid var(--neon-purple);
 }
 
-/* =========================================================
-VALUES IMAGE
-========================================================= */
 .values-image {
   flex: 1;
   display: flex;
@@ -870,7 +768,7 @@ VALUES IMAGE
 
 .values-image img {
   width: 100%;
-  max-width: 450px; /* smaller cap for better proportion */
+  max-width: 450px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 20px var(--neon-green);
@@ -883,59 +781,12 @@ VALUES IMAGE
   transform: scale(1.03);
 }
 
-/* =========================================================
-VALUES BUTTON
-========================================================= */
 .values-button-container {
   display: flex;
   justify-content: center;
-  margin-top: 30px; /* adds space below cards */
+  margin-top: 30px;
 }
 
-.learn-more-btn {
-  background: var(--neon-green);
-  color: #000;
-  font-weight: 700;
-  padding: 12px 28px;
-  border-radius: 30px;
-  border: 2px solid var(--neon-green);
-  box-shadow: 0 0 14px var(--neon-green);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: 0.3s ease;
-}
-
-.learn-more-btn:hover {
-  background: #000;
-  color: var(--neon-purple);
-  border-color: var(--neon-purple);
-  box-shadow: 0 0 18px var(--neon-purple);
-}
-
-/* =========================================================
-VALUES HEADINGS
-========================================================= */
-.values-label {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.6rem; /* slightly larger than subheading */
-  color: var(--neon-green);
-  -webkit-text-stroke: 0.5px var(--neon-green);
-  text-shadow: 0 0 8px var(--neon-green);
-  margin-bottom: 8px;
-}
-
-.values-text h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.4rem;
-  color: #000;
-  -webkit-text-stroke: 1px var(--neon-green);
-  text-shadow: 0 0 6px var(--neon-green);
-  margin-bottom: 10px;
-}
-
-/* =========================================================
-VALUES SUBTEXT
-========================================================= */
 .values-subtext {
   font-size: 1.1rem;
   font-weight: 600;
@@ -944,9 +795,6 @@ VALUES SUBTEXT
   margin-bottom: 20px;
 }
 
-/* =========================================================
-RESPONSIVE VALUES
-========================================================= */
 @media (max-width: 900px) {
   .values-container {
     flex-direction: column;
@@ -963,7 +811,7 @@ RESPONSIVE VALUES
 }
 
 /* =========================================================
-PRICING SECTION (Cleaned & Polished)
+PRICING SECTION
 ========================================================= */
 .pricing-section {
   padding: 80px 40px;
@@ -976,7 +824,7 @@ PRICING SECTION (Cleaned & Polished)
 /* Header */
 .pricing-header {
   text-align: center;
-  margin-bottom: 60px; /* space between header and cards */
+  margin-bottom: 60px;
 }
 
 .pricing-label {
@@ -1003,12 +851,10 @@ PRICING SECTION (Cleaned & Polished)
 .pricing-subtext {
   color: var(--light-gray);
   font-weight: 500;
-  margin-bottom: 40px; /* space between text and cards */
+  margin-bottom: 40px;
 }
 
-/* =========================================================
-PRICING GRID (3 → 2 → 1)
-========================================================= */
+/* Grid 3 → 2 → 1 */
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1029,9 +875,7 @@ PRICING GRID (3 → 2 → 1)
   }
 }
 
-/* =========================================================
-PRICING CARD
-========================================================= */
+/* Cards */
 .pricing-card {
   background: rgba(0, 0, 0, 0.6);
   border: 2px solid var(--neon-purple);
@@ -1048,21 +892,19 @@ PRICING CARD
   box-shadow: 0 0 20px var(--neon-green);
 }
 
-/* Remove bullets */
-.pricing-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
+.pricing-card h1 {
+  margin: 10px 0;
 }
 
-.pricing-card li {
-  color: var(--light-gray);
+.monthly {
+  margin-bottom: 10px;
+}
+
+.pricing-features p {
   margin: 6px 0;
 }
 
-/* =========================================================
-BUY NOW BUTTON
-========================================================= */
+/* BUY NOW BUTTON */
 .buy-btn {
   display: inline-block;
   margin-top: 20px;
@@ -1107,20 +949,21 @@ TESTIMONIALS
   max-width: 450px;
   border-radius: 10px;
   box-shadow: 0 0 20px var(--neon-green);
+  transition: 0.3s ease;
 }
 
-/* Testimonial Text */
+.testimonial-image img:hover {
+  box-shadow: 0 0 25px var(--neon-purple);
+  transform: scale(1.03);
+}
+
 .testimonial-text {
   max-width: 500px;
   text-align: left;
   padding-right: 40px;
 }
 
-
-/* =========================================================
-TESTIMONIALS TITLE
-========================================================= */
-.testimonials-label {
+.testimonial-label {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -1137,7 +980,6 @@ TESTIMONIALS TITLE
   text-shadow: 0 0 8px var(--neon-purple);
 }
 
-/* Divider */
 .testimonial-divider {
   height: 2px;
   width: 100%;
@@ -1157,7 +999,6 @@ TESTIMONIALS TITLE
   }
 }
 
-/* Stars */
 .stars {
   color: gold;
   font-size: 1.2rem;
@@ -1165,7 +1006,6 @@ TESTIMONIALS TITLE
   text-shadow: 0 0 6px var(--neon-purple);
 }
 
-/* Author */
 .testimonial-author {
   display: flex;
   align-items: center;
@@ -1187,7 +1027,6 @@ TESTIMONIALS TITLE
   transform: scale(1.05);
 }
 
-/* Testimonials Responsive */
 @media (max-width: 900px) {
   .testimonials-container {
     grid-template-columns: 1fr;
@@ -1220,21 +1059,6 @@ FAQ
   width: 100%;
   max-width: 450px;
   margin: 0 auto 18px;
-}
-
-/* =========================================================
-FAQ TITLE
-========================================================= */
-.FAQ-label {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #000;
-  -webkit-text-stroke: 1px var(--neon-purple);
-  text-shadow: 0 0 8px var(--neon-purple);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
 }
 
 .faq-question {
