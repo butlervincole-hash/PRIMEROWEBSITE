@@ -715,19 +715,54 @@ STEPS
   text-align: left;
 }
 
+/* =========================================================
+STEPS TITLE
+========================================================= */
+
+.steps-label {
+  font-family: 'Orbitron', sans-serif'
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+  -webkit-text-stroke: 1px var(--neon-purple);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* =========================================================
+STEPS IMAGE (Glow + Hover + Pulse)
+========================================================= */
 .steps-image img {
-  width: 450px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
   filter: drop-shadow(0 0 12px var(--neon-green));
+  box-shadow: 0 0 25px var(--neon-green);
+  transition: 0.3s ease;
+  animation: softPulse 3s ease-in-out infinite;
+}
+
+.steps-image img:hover {
+  box-shadow: 0 0 35px var(--neon-purple);
+  transform: scale(1.03);
+}
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+/* Glow Animation */
+@keyframes softPulse {
+  0%   { box-shadow: 0 0 20px var(--neon-green); }
+  50%  { box-shadow: 0 0 30px var(--neon-purple); }
+  100% { box-shadow: 0 0 20px var(--neon-green); }
 }
 
 @media (max-width: 900px) {
   .steps-container {
     flex-direction: column;
     text-align: center;
-  }
-
-  .steps-image img {
-    width: 300px;
   }
 }
 
